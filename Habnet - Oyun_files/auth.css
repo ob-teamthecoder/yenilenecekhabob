@@ -1,0 +1,39 @@
+html,body{
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.advn-view-container {
+    width: auto;
+    z-index: 0;
+    cursor: default;
+	top: 30px;
+    left: -710px;
+    overflow: hidden;
+}
+
+.advn-view-content {
+    width: 730px;
+    height: 550px;
+    position: fixed;
+    z-index: 0;
+    cursor: default;
+    top: 10px;
+    left: -708px;
+    overflow: hidden;
+}
+
+#advn-click-content {
+    width: 728px;
+    height: 90px;
+    position: fixed;
+    z-index: 999999999999999;
+	overflow: hidden;
+}
+
+#advn-click-content iframe {
+	position: absolute;
+	border: 0;
+}

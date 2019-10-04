@@ -1,0 +1,1450 @@
+@import Font-Awesome.css;
+@import https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300;
+@import https://habnet.biz/Web/sweetalert-master/dist/sweetalert.css;
+@import https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300,300italic;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i|Roboto:400,500,700');
+
+/* Ubuntu Habbo */
+@font-face{
+    font-family: "Ubuntu Habbo";
+    src: url("https://habnet.biz/Web/Fonts/ubuntuhabbo-webfont.woff2") format("woff2"),
+         url("https://habnet.biz/Web/Fonts/ubuntuhabbo-webfont.woff") format("woff");
+    unicode-range: U+007C,U+2020,U+2022,U+00B6,U+00B1,U+00A5,U+00B5,U+00AA,U+00BA,U+00AC,U+0192,U+00BB,U+2014,U+2018,U+2021;
+}
+html {
+    height: 100%;
+}
+.page-container[data-page = "adblock"] .page-header {
+    background-image: url(https://habnet.biz/Images/header/header-adblock.png);
+    background-position: 160px;
+    background-color: #cc1c1c;
+}
+.page-container[data-page = article] a{
+	color: #0d7bc1;
+    text-decoration: underline;
+	}
+body {
+    background-color: #f7f9f9;
+    min-width: 320px;
+    min-height: 100%;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.Avatarim{overflow:hidden;height:160px}
+.whoIS{height:95px;margin:auto;margin-bottom:20px;position:relative;width:583px}
+.whoIS .avatar{background-color:#24211C;border:1px solid #000;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.2);height:95px;overflow:hidden;position:relative;width:95px}
+.whoIS .avatar img{bottom:0;display:table;left:0;margin:auto;position:absolute;right:0}
+.whoIS .info{background:#24211C;border:1px solid #000;border-left:0;border-radius:0 7px 7px 0;bottom:0;box-shadow:0 -1px rgba(255,255,255,.2),0 1px rgba(255,255,255,.2),1px 0 rgba(255,255,255,.2);height:60px;margin:auto;margin-left:83.3px;min-width:500px;padding:0 0 0 5px;position:absolute;top:0}
+.whoIS .info h3{margin:0;text-transform:none}
+.whoIS .info p{color:#7ecaee;display:block;font-size:14px;line-height:1.4;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px rgba(0,0,0,.3);text-transform:none;white-space:nowrap}
+.illumina.body.profile{margin-top:160px;overflow:visible;position:relative}
+.illumina.body.profile .content .badge{border:1px solid #ccc;border-radius:5px;box-shadow:inset 0 0 15px 5px #d3d3d3,0 1px #d3d3d3;height:50px;margin:10px 26px;position:relative;width:50px}
+.illumina.body.profile .content .badge img{bottom:0;display:table;left:0;margin:auto;position:absolute;right:0;top:0}
+.illumina.body.profile .content .friend{margin:5px;text-align:center;width:92px}
+.illumina.body.profile .content .friend .avatar{text-align:center}
+.illumina.body.profile .content .friend a{color:#000}
+.illumina.body.profile .content .il_border_101{display:inline-block;padding:5px}
+.illumina.body.profile .content .room{background-image:url(https://habnet.biz/Images/images/sprite.png);background-position:-200px -187px;margin:6px;padding-top:90px;text-align:center;width:90px;max-height:108px;word-break:break-word;overflow:hidden}
+.illumina.body.profile.badges:before{background-image:url(https://habnet.biz/Images/images/badges.png)}
+.illumina.body.profile.friends:before{background-image:url(https://habnet.biz/Images/images/friends.png)}
+.illumina.body.profile.groups:before{background-image:url(https://habnet.biz/Images/images/groups.png)}
+.illumina.body.profile.rooms:before{background-image:url(https://habnet.biz/Images/images/rooms.png)}
+.illumina.body.profile:before{background-repeat:no-repeat;content:"";height:140px;left:10px;position:absolute;top:-140px;width:100%}
+.illumina_dark.body .badge{background:#201d18;border:1px solid #181511;border-radius:4px;box-shadow:inset 0 0 0 1px #33312a,0 1px #33312a;display:inline-block;height:62px;margin:2px;width:62px}
+.illumina_dark.body .badge:hover{background:rgba(0,0,0,.3)}
+.illumina .header{border-bottom:1px solid #ccc;box-shadow:0 1px #fff;font-size:20px;margin-bottom:5px;padding-bottom:4px;position:relative}
+.illumina .header button{background:#e2e2e2;border:1px solid #919191;border-radius:4px;box-shadow:inset 0 3px #ffffff,inset 0 -3px #d3d3d3,0 1px #fff;color:#666;font-size:13px;font-weight:bolder;height:17px;line-height:1;max-height:17px;max-width:17px;padding:0;position:absolute;right:0;text-shadow:0 1px #FFF;width:17px}
+.illumina.body{background:#e2e2e2;border:1px solid #919191;border-radius:4px;box-shadow:inset 0 3px #ffffff,inset 0 -3px #d3d3d3,4px 4px rgba(0,0,0,.2);font-family:ubuntu;margin-bottom:10px;overflow:auto;padding:5px 8px 10px;text-shadow:1px 0 #FFF,0px 1px #FFF,-1px 0 #FFF,0px -1px #FFF}
+.illumina_dark .content{font-size:14px;padding:0 0 5px}
+.illumina_dark .content button{background:#201d18;border:1px solid #181511;border-radius:4px;box-shadow:inset 0 0 0 1px #33312a,0 1px #33312a;color:#000;display:table;font-size:13px;font-weight:bolder;margin:7px auto 4px;padding:5px 7px;text-shadow:0 1px #33312a,1px 0 #33312a,-1px 0 #33312a,0 -1px #33312a}
+.illumina_dark .header{margin-bottom:5px;padding-bottom:4px;position:relative}
+.illumina_dark .header button{background:#201d18;border:1px solid #181511;border-radius:4px;box-shadow:inset 0 0 0 1px #33312a,0 1px #33312a;color:#000;font-size:13px;font-weight:bolder;height:18px;line-height:2px;max-height:18px;max-width:18px;padding:0;padding-left:1px;position:absolute;right:0;text-shadow:0 1px #33312a,1px 0 #33312a,-1px 0 #33312a,0 -1px #33312a;width:18px}
+.illumina_dark.body{background:#24211c;border:1px solid #000;border-radius:4px;box-shadow:inset 0 0 0 3px #33312b,4px 4px rgba(0,0,0,.3);color:#fff;font-family:ubuntu;padding:5px 8px;position:relative;text-shadow:1px 0 #000,0px 1px #000,-1px -0 #000,0px -1px #000}
+.illumina .header.sub{border-top:1px solid #ccc;box-shadow:inset 0 1px #fff,0 1px #fff;text-align:center}
+  
+
+.page-container[data-page = "helptool"] .page-header {
+    background-image: url(https://habnet.biz/Images/header/header-contributors.png);
+    background-color: #138ab1;
+}
+.page-container[data-page = "liderler"] .page-header {
+    background-image: url(https://habnet.biz/Images/header/header-store-history.png);
+    background-color: #6bbd79;
+}
+
+nav{    display: -webkit-box;}
+.page-container[data-page ^= "ayarlar"] .page-header {
+    background-image: url(https://habnet.biz/Images/header/header-settings.png);
+    background-position: 84px center;
+    background-color: #999999;
+}
+.box>.title {
+    height: 75px;
+    float: left;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+.box>.footer {
+    height: 60px;
+    float: left;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid #ddd;
+}
+.box>.title>h1 {
+    color: #6e6e6e;
+    font-size: 18px;
+    line-height: 18px;
+    border-bottom: none !important;
+    font-weight: 500;
+    padding: 0px 0 0 20px;
+}
+.box>.title>p {
+    color: #999;
+    font-size: 13px;
+    padding: 2px 0 0 20px;
+}
+.box>.footer>p {
+    color: #5d5b5b;
+    line-height: 1.2;
+    font-size: 14px;
+    padding: 8px 0 0 20px;
+}
+.left>.box>.content {
+    float: left;
+    width: 100%;
+    padding: 0 15px 15px 15px;
+}
+.box>.content>.bloc {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.box>.content>.bloc>.image {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+    border-radius: 3px 0 0 3px;
+    width: 180px;
+    height: 80px;
+    overflow: hidden;
+    float: left;
+}
+	.ReklamName {background: #156fab;width: 400px;margin-top: -25px;height: 20px;margin-left: -5px;margin-bottom: 5px;padding: 3px;border-top-left-radius: 5px;font-size: 11px;font-family: AnasayfaLight;border-top-right-radius: 5px;}
+
+.box>.content>.bloc>.bull {
+    float: left;
+    background: #eee;
+    width: 100%;
+    height: auto;
+	margin-bottom:15px;
+    border-radius: 0 3px 3px 0;
+    padding: 14px 15px;
+}
+.box>.content>.bloc>.image>.avatar_plate {
+    webkit-filter: drop-shadow(0 0 5px #000);
+    filter: drop-shadow(0 0 5px #000);
+    float: left;
+    /* border-radius: 200px; */
+    width: 68px;
+    overflow: hidden;
+    height: 90px;
+}
+.box>.content>.bloc>.bull>h1 {
+    font-size: 16px;
+    line-height: 16px;
+    color: #6e6e6e;
+    padding: 0 !important;
+    font-weight: 500;
+    margin: 0 !important;
+}
+.box>.content>.bloc>.bull>p {
+    font-size: 13px;
+    line-height: 16px;
+    color: #5d5b5b;
+    margin-top: 5px;
+}
+.text-warning{color:#f0ad4e!important;}
+.page-container[data-page = "kurallar"] .page-header {
+    background-image: url(https://habnet.biz/Images/header/header-staff.png);
+    background-color: #e88b16;
+}
+.page-container[data-page ^= "ayarlar"] .default-section {
+    width: 100%;
+    max-width: 700px;
+    min-height: 390px;
+    margin: 0 auto;
+    padding: 30px 30px 30px 75px !important;
+}
+.page-container[data-page ^= "ayarlar"] .page-header {
+    padding-bottom: 0 !important;
+    margin: 0px 0 0px !important; 
+    border-bottom: none !important;
+}
+.page-container[data-page ^= "ayarlar"] .form-subcategory {
+    margin: 40px 0 10px;
+}
+.rounded-input, .rounded-textarea {
+    background-color: #fff;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    border-radius: 48px;
+    padding: 11px 24px;
+    display: block;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #b4b4b4;
+    width: 100%;
+    height: 47px;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+}
+.row .column-2 {
+    width: 50%;
+    float: left;
+}
+.row .column-2:nth-child(2), .row .column-3:nth-child(3), .row .column-3:nth-child(2) {
+    padding-left: 15px;
+}
+.row .column-2:nth-child(1), .row .column-3:nth-child(1), .row .column-3:nth-child(2) {
+    padding-right: 15px;
+}
+.rounded-button.grey {
+    color: #999999;
+    border-color: #999999;
+}
+.rounded-button {
+    background-color: transparent;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    border-radius: 48px;
+    padding: 11px 24px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    border: 2px solid #333;
+    cursor: pointer;
+    height: 47px;
+    line-height: 21px;
+    text-shadow: none;
+    text-align: center;
+    -webkit-transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
+}
+.submit-button {
+    margin-top: 40px !important;
+    text-align: center;
+}
+.rounded-input.darkgrey-active:focus, .rounded-textarea.darkgrey-active:focus {
+    border-color: #333;
+}
+.rounded-input:focus, .rounded-textarea:focus {
+    border-color: #333;
+}
+.rounded-button:not(.white):not([disabled]):not(.no-hover):hover, .rounded-button:not(.white).plain {
+    background-color: #333;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.page-container[data-page ^= "ayarlar"] .settings-panel {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #999999;
+    width: 82px;
+    padding: 10px 0;
+    position: absolute;
+    top: 35px;
+    left: -41px;
+}
+.page-container[data-page ^= "ayarlar"] .settings-panel a {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    position: relative;
+}
+.page-container[data-page ^= "ayarlar"] .settings-panel a:hover:after{
+    display: block;
+}
+.page-container[data-page ^= "ayarlar"] .settings-panel a:after{
+    background-color: #999999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    top: 17px;
+    left: 105%;
+    z-index: 3;
+    content: attr(data-label);
+    line-height: normal;
+    white-space: nowrap;
+    display: none;
+}
+.page-container[data-page ^= "sss"] .page-header {
+    background-image: url(https://habnet.biz/Images/header/header-jobs.png);
+    background-position: 10px -1px;
+    background-color: #37241c;
+}
+.page-container[data-page ^= "sss"] .page-content article.default-section, .page-container .page-content aside.default-section { margin-bottom: 10px;}
+.page-container[data-page = "helptool"] .members-container {
+    margin-top: 30px;
+}
+.page-container[data-page = "helptool"] .members-container .member-container .member-content {
+    text-decoration: none;
+    color: #333;
+}
+.header-container:before{background-image:url(https://habnet.biz/Images/header/header-pattern.png);background-color:rgba(32,107,156,0.7);content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0}
+.header-container .header-content{position:relative;z-index:1;height:100%}
+.header-container.is-small .header-content .logo{top:-120px;left:-65px;padding-top:120px}
+.header-container .header-content .logo{width:399px;height:399px;font-size:0;position:relative}
+.header-container.is-small .header-content .logo a{height:105px;margin:25px auto 0}
+.header-container .header-content .logo a{display:block;width:270px}
+.header-container.is-small .header-content .account-container{bottom:50px}
+.header-container .header-content .account-container{position:absolute;right:0}
+.header-container .header-content .account-container .account-buttons .rounded-button.plain,.header-container .header-content .account-container .account-buttons .rounded-button:not(.plain):hover{color:#2d74a6}
+.header-container .header-content .account-container .account-buttons .rounded-button.plain{-webkit-transition:opacity .2s;transition:opacity .2s}
+.header-container .header-content .account-container .account-buttons .rounded-button{opacity:.85}
+.rounded-button.white:not([disabled]):not(.no-hover):hover,.rounded-button.white.plain{background-color:#fff;color:#333}
+.rounded-button.white{color:#fff;border-color:#fff;color:#fff;border-color:#fff}
+.rounded-button{background-color:transparent;-webkit-border-radius:48px;-moz-border-radius:48px;border-radius:48px;padding:11px 24px;display:inline-block;text-decoration:none;font-family:"Montserrat",Arial,sans-serif;font-weight:600;font-size:14px;color:#333;text-transform:uppercase;border:2px solid #333;cursor:pointer;height:47px;line-height:21px;text-shadow:none;text-align:center;-webkit-transition:background-color 0.2s,color .2s;transition:background-color 0.2s,color .2s}
+.header-container.is-small{height:200px;padding:0 120px}
+.header-container{background-image:url(https://habnet.biz/Images/header/top-header.png);background-position:center;background-size:auto 600px;background-color:#000;position:relative;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,0.3);text-align:center;overflow:hidden}
+.navigation-container .navigation-menu .navigation-item.navigation-right-side-item>a .account-avatar img{position:relative;top:-6px}
+.pixelated,.pixelated:before,.pixelated:after{image-rendering:-webkit-optimize-contrast;image-rendering:pixelated}
+*>div:after{content:"";display:block;clear:both}
+.navigation-container .navigation-menu .navigation-item.navigation-right-side-item>a{text-transform:none;padding:28px 40px 0 15px;border-left:1px solid rgba(0,0,0,0.1)}
+.navigation-container{-webkit-box-shadow:0 -3px 3px rgba(0,0,0,0.1) inset;box-shadow:0 -3px 3px rgba(0,0,0,0.1) inset;background-color:#fff;position:relative}
+*,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:0 none;-ms-interpolation-mode:bicubic;image-rendering:auto}
+.navigation-container .navigation-menu{-ms-flex-align:center;align-items:center;-ms-flex-pack:start;justify-content:flex-start;height:80px;width:100%;list-style:none;margin:0;padding:0}
+.navigation-container .navigation-menu .navigation-item.selected>a{border-color:#2d759b;color:#2d759b}
+.flex-container{display:-webkit-flex;display:-ms-flexbox;display:flex}
+.navigation-container .navigation-menu .navigation-item.main-link-item{margin-right:42px}
+.navigation-container .navigation-menu .navigation-item.navigation-right-side-item>a span{max-width:90px;-ms-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;display:inline-block;overflow:hidden}
+.navigation-container .navigation-menu .navigation-item.navigation-right-side-item>a:after{position:relative;top:-6px}
+.navigation-container .navigation-menu .navigation-item{margin-right:37px;height:inherit;position:relative}
+.navigation-container .navigation-menu .navigation-item.main-link-item>a{background-image:url(https://habnet.biz/Images/habnetsummerlogo.png);background-position:center;background-repeat:no-repeat;width:135px;display:block;font-size:0;border-right:1px solid rgba(0,0,0,0.1)}
+.navigation-container .navigation-menu .navigation-item>a{font-size:15px;font-weight:500;text-decoration:none;text-transform:uppercase;color:#222;height:inherit;display:block;padding-top:28px;border-bottom:3px solid transparent}
+.navigation-container .navigation-menu .navigation-item.has-items>a:after{font-family:"FontAwesome",sans-serif;font-size:16px;content:"\f107";margin-left:8px;display:inline-block}
+.navigation-container .navigation-menu .navigation-item.has-items .navigation-submenu{-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.1);box-shadow:0 3px 3px rgba(0,0,0,0.1);background-color:#fff;position:absolute;top:74px;left:-11px;list-style:none;margin:0;padding:6px 0 0;width:170px;display:none;z-index:9}
+.navigation-container .navigation-menu .navigation-item.has-items .navigation-submenu .navigation-subitem>a{padding:10px;display:block;color:#333;text-decoration:none}
+.navigation-container .navigation-menu .navigation-item.navigation-right-side-item{margin-left:auto;margin-right:0}
+.navigation-container .navigation-menu .navigation-item.navigation-right-side-item>a .account-avatar{-webkit-border-radius:0 0 64px 64px;-moz-border-radius:0 0 64px 64px;border-radius:0 0 64px 64px;float:left;position:relative;top:-28px;overflow:hidden;width:64px;height:64px;margin-right:10px}
+.navigation-container .navigation-menu .navigation-item:hover>a{color:#7d7d7d}
+.navigation-container .navigation-menu .navigation-item.has-items:hover .navigation-submenu{display:block}
+.navigation-container .navigation-menu .navigation-item.has-items .navigation-submenu .navigation-subitem>a:hover{background-color:rgba(0,0,0,0.05)}
+.navigation-container .navigation-menu .navigation-item.has-items.selected .navigation-submenu:before{border-top:3px solid #2d759b;content:"";position:absolute;top:3px;left:0;right:0;display:block}
+.navigation-container .navigation-menu .navigation-item.navigation-right-side-item.has-items .navigation-submenu{left:1px;right:0;width:auto}
+*,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:0 none;-ms-interpolation-mode:bicubic;image-rendering:auto}
+.page-container[data-page = home] .page-header{background-image:url(https://habnet.biz/Images/header/header-news.png);background-color:#47aeec}
+.page-container .page-header{-webkit-box-shadow:0 4px 10px rgba(0,0,0,0.1) inset;box-shadow:0 4px 10px rgba(0,0,0,0.1) inset;background-position:center left;background-repeat:no-repeat;border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(0,0,0,0.1);height:160px;color:#fff;padding-left:395px;text-shadow:0 1px 0 rgba(0,0,0,0.3);font-weight:300;image-rendering:-webkit-optimize-contrast;image-rendering:pixelated}
+.flex-container.flex-vertical-center{-ms-flex-align:center;align-items:center}
+.flex-container{display:-webkit-flex;display:-ms-flexbox;display:flex}
+.page-container .page-header h1{margin-bottom:8px;color:#fff!important}
+.page-container{-webkit-flex:1;-ms-flex:1;flex:1;}
+.flex-container.flex-direction-column{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child{margin-top:0}
+h1{font-size:30px;font-weight:600}
+.page-container .page-content{width:100%;max-width:1055px;margin:0 auto;padding:55px 0;font-family:"Ubuntu Habbo","Poppins",Arial,sans-serif}
+.page-container[data-page = home] .page-content .articles-container{margin:-16px -16px 40px}
+.page-container[data-page = home] .page-content .articles-container .article-container{width:33.33%;float:left}
+.page-container[data-page = home] .page-content .articles-container .article-container .article-content{-webkit-box-shadow:0 0 10px rgba(0,0,0,0.1);box-shadow:0 0 10px rgba(0,0,0,0.1);background-position:bottom center;background-repeat:no-repeat;background-color:#fff;width:100%;max-width:330px;height:274px;margin:16px auto;text-decoration:none;color:#333;display:block}
+.page-container[data-page = home] .page-content .articles-container .article-container .article-content .article-header{background-color:#fff;padding:15px;text-align:center;min-height:94px;position:relative;-webkit-transition:padding .4s ease 0s;transition:padding .4s ease 0s}
+.page-container[data-page = home] .page-content .articles-container .article-container .article-content .article-header .article-category{font-family:"Montserrat",Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase}
+.page-container[data-page = home] .page-content .articles-container .article-container .article-content .article-header .article-separation{width:70px;height:2px;margin:7px auto 15px}
+.page-container[data-page = home] .page-content .articles-container .article-container .article-content .article-header .article-title{font-size:16px}
+
+.page-container .page-content .left-side{width:692px;float:left;clear:left}
+.page-container .page-content article.default-section,.page-container .page-content aside.default-section{-webkit-box-shadow:0 0 10px rgba(0,0,0,0.1);box-shadow:0 0 10px rgba(0,0,0,0.1);background-color:#fff;padding:20px;line-height:24px;font-weight:300;position:relative}
+.page-container .page-content .default-section p:first-child{margin-top:0}
+.page-container .page-content .default-section p{margin:0 0 17px;margin:0 0 17px}
+.page-container .page-content .right-side{width:330px;float:right;clear:right}
+h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child{margin-top:0}
+.aside-title{border-bottom:1px solid rgba(0,0,0,0.2);padding-bottom:10px;margin-bottom:25px}
+h3{font-size:20px;line-height:26px}
+.page-container[data-page = article] .related-articles-container .related-article-container,.page-container[data-page = event] .related-articles-container .related-article-container{display:block;text-decoration:none;line-height:normal;margin-bottom:10px}
+.page-container[data-page = article] .related-articles-container .related-article-container .related-article-details,.page-container[data-page = event] .related-articles-container .related-article-container .related-article-details{padding-top:5px}
+.page-container[data-page = article] .related-articles-container .related-article-container .related-article-details .related-article-title,.page-container[data-page = event] .related-articles-container .related-article-container .related-article-details .related-article-title{font-weight:400;color:#333;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.page-container[data-page = article] .related-articles-container .related-article-container .related-article-details .related-article-date,.page-container[data-page = event] .related-articles-container .related-article-container .related-article-details .related-article-date{font-size:12px;font-weight:400;color:#969696}
+.page-container[data-page = article] .related-articles-container .related-article-container .related-article-thumbnail,.page-container[data-page = event] .related-articles-container .related-article-container .related-article-thumbnail{background-position:center;width:50px;height:50px;float:left;margin-right:10px}
+.likes{color:#008000;}
+.dislike{color:#8B0000;}
+/* Ben */
+.ReklamName {background: #156fab;width: 400px;margin-top: -25px;height: 20px;margin-left: -5px;margin-bottom: 5px;padding: 3px;border-top-left-radius: 5px;font-size: 11px;font-family: AnasayfaLight;border-top-right-radius: 5px;}
+.LogoutfromGame{background:url(https://habnet.biz/Images/Icons.png) no-repeat -172px -568px;width:58px;height:52px}
+.Kredilerimm{background:url(https://habnet.biz/Images/Icons.png) no-repeat -267px 0;width:40px;float:left;height:32px}
+.InGameStats ul li {width: auto;margin-right: 0px;float: left;font-size: 14px;display: inline-block;}
+.Elmaslarim{background:url(https://media.discordapp.net/attachments/456975733169061888/540646273028587541/DSADASDSA.png);width:18px;height:15px;margin-top:8px;float:left}
+.Ducketslerim{background:url(https://media.discordapp.net/attachments/456975733169061888/540646288505569281/Screenshot_37.png) no-repeat;width:20px;height:20px;margin-top:5px;float:left}
+.EnterGame{background:url(https://habnet.biz/Images/Icons.png) no-repeat 0 -151px;width:144px;height:146px;text-decoration:uppercase}
+.InGameStats ul{width:100%;height:100%;padding:10px}
+.Oyunagirmek{margin:30px auto;width:30%;margin-bottom:13%}
+.InGameStats ul li span{color:#ffd900;float:left;padding:5px}
+.MeUserStats{width:30%;float:right}
+#twelve-point-star{height:100px;width:100px;background:#1d71a8}
+#twelve-point-star:before{height:100px;width:100px;background:#037CA9;content:"";position:absolute;-moz-transform:rotate(30deg);-webkit-transform:rotate(30deg);-ms-transform:rotate(30deg);-o-transform:rotate(30deg);transform:rotate(30deg)}
+#twelve-point-star:after{height:100px;width:100px;background:#037CA9;content:"";position:absolute;-moz-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);-ms-transform:rotate(-30deg);-o-transform:rotate(-30deg);transform:rotate(-30deg)}
+.InGameStats {width: 290px;box-shadow: 0 10px 5px 0 rgba(168,161,168,0.53);height: 55px;margin-bottom: 35px;}.Cikis{float:right}
+.Oyunagirmek span{color:#fff;font-size:20px;float:left;z-index:2;font-family:AnasayfaLight;margin-top:-65px;position:absolute}
+.LowpicBig .avatarImage{width:650px;height:300px}
+.RowsinBig{width:650px;height:300px;float:left}
+.Low-itemBig{width:67%;height:auto;float:left}
+.LowitemDescBig{top:0;position:fixed;color:#fff;z-index:112312;font-family:AnasayfaLight;padding:15px;position:absolute;font-size:20px}
+.LowitemDesc2Big{top:0;margin-top:25px;color:#fff;z-index:1;font-family:AnasayfaLight;padding:15px;position:absolute;font-size:14px}
+.LangeBox {
+    width: 738px;
+    height: 100px;
+    padding: 5px;
+    background: #156fab;
+    margin: 0px auto;
+    margin-top: 35px;
+    color: #fff;
+}/* Ben Ende */
+/* Header */
+.btn-block{position:absolute;width:60%;font-family:AnasayfaLight;font-size:17px;margin:75px 155px}
+#header #navigator {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 80px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 12312;
+    background: #fff;
+    /* color: #fff; */
+    -webkit-box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 0 0 rgba(0,0,0,0.2);
+}
+#header #contents{}
+#header #subnavigator .subtab{float:left;height:35px;line-height:35px;padding-left:20px;padding-right:20px;color:#1d71a8;cursor:pointer;font-size:12px;text-decoration:none}
+#header #subnavigator{width: 950px;position:absolute;margin-top:53px;height:35px;font-size:14px;z-index:2;background:#FFF;border:1px solid rgba(0,0,0,0.2);border-top:0;border-bottom:2px solid rgba(0,0,0,0.2);border-radius:0 0 3px 3px}
+#header #navigator .tab{float:left;padding-left:20px;padding-right:20px;cursor:pointer;height:50px;line-height:50px;font-size:13px;text-decoration:none;color:#FFF}
+#header #navigator .tab:hover{background:rgba(255,255,255,0.15)}
+#header #subnavigator a:hover{text-decoration:none;color:#1d71a8!important;font-weight:700}
+#header #navigator .tab.right{float:right}
+#header #navigator .tab.select{background:rgba(255,255,255,1);border-bottom:0 solid #FFF;border-top:0 solid #FFF;color:#1d71a8;font-weight:800}
+/* Header Ende */
+
+.staffbox .brnPersonelDiv:hover{background:rgba(0,0,0,.05)}
+.PersonelBaslik{float:left;width:100%;font-family:AnasayfaLight;text-transform:uppercase;padding:10px;background:#156fabc7}
+.staffbox{margin-bottom:10px;background:#fff;margin-top:10px;width:600px;box-shadow:2px 2px 16px 4px #d2d1d1;margin-right:15px;float:left}
+.brnPersonelDiv{cursor:pointer;float:left;position:relative;color:#115684;padding:2px;width:50%;overflow:hidden;height:65px}
+.PersonelRozet{margin-top:-40px;float:right}
+.bilgiler{width:75%;float:left;height:60px;padding:10px;position:relative;margin-left:70px}
+.gorev{font-size:12px;position:absolute;font-style:italic;float:left;margin-top:5px}
+.liderlerli {
+    overflow: hidden;
+    /* background: #2779b1; */
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    /* position: relative; */
+    float: left;
+    /* z-index: 123123; */
+}.nameofuser span {
+    /* font-family: AnasayfaLight; */
+    margin-left: 30px;
+    font-style: italic;
+    float: left;
+}.nameofuser a {
+    width: 45%;
+    float: left;
+    text-align: center;
+    color: #2779b1;
+    font-size: 19px;
+}.nameofuserOWN{margin-right:25px;float:right;border-radius:10px;height:60px;font-family:AnasayfaLight;background:#2779b1;margin-top:15px;padding:13px;width:80%}
+#hulk{text-decoration:underline}
+.errorboxlider{width:100%;padding:10px;height:70px;background:#8080804f}
+.Informationboxlider{width:100%;padding:13px;height:70px;background:#2779b1;margin-bottom:10px;border-radius:10px}
+.TitleofLeader{width:55%;padding:10px;margin:0 auto;position:relative;text-align:center;margin-bottom:10px;font-family:AnasayfaLight;font-size:30px;border-bottom:5px solid #2779b1;color:#2779b1}
+.nameofuser {
+    margin-top: 30px;
+    padding: 13px;
+}.MostBadges{width:49%;float:left}
+.MostAchievements{width:49%;float:right}
+.numberingofrow {
+    font-size: 50px;
+    text-align: center;
+    /* font-family: AnasayfaLight; */
+    color: #2779b1;
+    margin-top: 30px;
+    float: left;
+}.MostBadges li{width:100%;height:100px;position:relative;margin-bottom:10px;float:left;    list-style: none;}
+.MostAchievements li{width:100%;height:100px;position:relative;display:block;padding:10px 15px;margin-bottom:-1px;background:#2196f333;float:left}
+.articleFooter{width:23%;float:right}
+.autor {
+    width: 150px;
+    padding: 4px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    float: right;
+    bo: ;
+    /* border-top-right-radius: 10px; */
+    bottom: 0;
+    position: absolute;
+    erflow: hidden;
+    background: #2177b4a8;
+    right: 0;
+}.overhang, .overhang-overlay{    position: relative !important;}
+.HaberlerTitle {
+    background: #1a6294;
+    height: 53px;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    /* border-bottom: 2px solid #fff; */
+    background-size: cover;
+    font-family: AnasayfaLight;
+    font-size: 20px;
+}.Wolkenuberall{width:103.5%;height:65px;margin-left:-10px;background:url(https://habnet.biz/Web/Images/Gruenwolke.png) 100% 23%;background-size:cover}
+.WriteComment{font-family:AnasayfaLight;text-align:center;width:130px;height:130px;border-radius:50%;margin-top:-65px;padding-top:25px;z-index:-1;position:absolute;margin-left:210px;background:#2779b1;font-size:19px}
+.CommentBoxing{background-color:#2779b1;margin-bottom:35px;margin-top:12%;font-size:14px;padding:13px;font-weight:lighter;border-radius:10px;color:#fff}
+.Comment{-webkit-transition:1s;transition:1s;margin:0 auto;width:29%}
+input.Comment[type="submit"]{display:inline-block;position:absolute;height:47px;color:#fff;width:155px;text-align:center;border:0;font-size:20px;font-family:AnasayfaLight;text-decoration:none;background-color:#2779b1;overflow:hidden;border-bottom-left-radius:10px;-webkit-transition:box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);transition:box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);border-bottom-right-radius:10px}
+.avatari{float:left;width:85px;overflow:hidden;text-align:left;background:#2779b1;height:85px;margin-top:-5px;border-radius:50%}
+.resti{color:#fff;float:left;width:80%;padding:10px;background:#2779b1;z-index:-1;height:auto;min-height:100px;margin-top:-10px;border-radius:10px;margin-left:-35px}
+.YorumCont{margin-bottom:10px;font-size:14px;padding:13px;color:#fff}
+.YorumInhalt{height:77%;width:97%;word-break:break-all;float:right;text-align:left;font-family:AnasayfaLight}
+.YorumName{float:right;bottom:0;font-family:AnasayfaLight;font-size:16px}
+.avatari img{margin-top:-5px}
+.gaestebuch .row{margin-top:10px}
+.oddingit:nth-of-type(even) .YorumName{float:left}
+.oddingit:nth-of-type(even) .resti{float:right;margin-right:-35px}
+.oddingit:nth-of-type(even) .YorumInhalt{float:left}
+.oddingit:nth-of-type(even) .avatari{float:right;text-align:right}
+.rowin{width:100%;height:60px}
+.rowin:hover{background:#071f0a17}
+.TopTen a{font-family:AnasayfaLight;font-weight:700}
+.TopTen span{font-family:AnasayfaLight;font-size:smaller;font-style:italic}
+.rowin b{float:left;margin:10px 9px}
+.nameofuser2{height:60px;font-family:AnasayfaLight;float:left;text-align:center;width:90%}
+.nameofuser2 span{font-family:AnasayfaLight;font-style:italic}
+.nameofuser2 a{width:90%;float:left;text-align:center;font-family:AnasayfaLight;font-size:19px}
+.Sayim{padding:15px;font-weight:900}
+.avatarImage{width:120px;height:120px;float:left;box-shadow:3px 3px rgba(0,0,0,0.67);background-repeat:no-repeat;background-position:50% 25%}
+.avatarImageBig {
+    width: 680px;
+    height: 275px;
+    /* border-radius: 20px; */
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}.Rowsin{width:100%;float:left;height:10%}
+.Low-item{width:58%;height:auto;float:left;margin-left:9px}
+.Lowpic{width:38%;float:left}
+.LowitemDesc{color:#1d71a8ab;font-size:18px;font-weight:600;line-height:1.2;font-variant-ligatures:common-ligatures;box-sizing:border-box;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:AnasayfaLight}
+.NewsTile{width:48%;float:left;margin-right:10px;height:10%;margin-bottom:25px}
+.LowitemDesc2{height:20px;font-size:11px;color:#1d71a8ab;margin-top:5px;font-family:AnasayfaLight}
+.Boxingonside{width:350px;height:115px;float:right}
+.BoxingonsideTitle{color:#fff;font-size:18px;font-weight:600;line-height:1.2;font-variant-ligatures:common-ligatures;box-sizing:border-box;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:AnasayfaLight;background:#1d71a8;padding:10px;height:40px;width:100%}
+.BoxingonsideInside{color:#fff;height:100%;width:100%;border-bottom-left-radius:5px;background:#1d71a8c4;border-bottom-right-radius:5px}
+.BoxingonsideInside p{margin:0 10px 10px;padding:10px;font-size:15px;font-family:AnasayfaLight;hyphens:auto;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto}
+.einschub{margin-bottom:5%}
+.avatarsboxs{border-radius:50%;height:140px;width:140px;border:4px solid #d6dfc8;margin-top:4px;background:#2779b1;position:relative;float:left}
+.detailsboxs{width:420px;margin-left:-67px;height:150px;background:#2779b1;float:left;border-radius:10px}
+.loginsboxs{border-radius:50%;height:175px;margin-left:-57px;width:195px;margin-top:-12px;position:relative;background:#2779b1;float:left}
+.InformationBoxI{margin:25% auto;height:75px;width:75px;text-align:center;background:#2779b1;border-radius:50px}
+.InformationBoxI2{font-size:50px;color:#fff;height:100%;left:0;padding:10px;right:0;position:absolute}
+.Welcometext{text-transform:uppercase;text-align:center;font-size:27px;font-family:AnasayfaLight;padding:10px}
+.enteringdansotel{font-size:30px;margin-top:73px;text-align:right;margin-right:18px;font-weight:700}
+.loginsboxs span{text-transform:uppercase;font-size:15px;text-align:right;margin-left:15px}
+.loginsboxs b{text-align:center;width:100%;margin-left:65px;font-size:18px}
+.withoutchild:nth-child(even){background-color:#fff!important;height:225px}
+.owl-stage-outer .owl-stage .owl-item{width:240px!important;height:210px!important}
+.eingeschrankt{margin-right:-12px!important;margin-left:-12px!important;background:#fff!important}
+.tooltipcustom{position:relative}
+.tooltipcustom:before,.tooltipcustom:after{display:block;opacity:0;pointer-events:none;position:absolute}
+.tooltipcustom:after{border-right:6px solid transparent;border-bottom:6px solid #2779b1;border-left:6px solid transparent;content:'';height:0;top:77px;left:32px;width:0}
+.tooltipcustom:before{background:#2779b1;border-radius:2px;color:#fff;content:attr(data-title);font-size:14px;padding:5px 15px;top:48px;top:82px;white-space:nowrap}
+.tooltipcustom.expand:before{transform:scale3d(.2,.2,1);transition:all .2s ease-in-out}
+.tooltipcustom.expand:after{transform:translate3d(0,6px,0);transition:all .1s ease-in-out}
+.tooltipcustom.expand:hover:before,.tooltipcustom.expand:hover:after{opacity:1;transform:scale3d(1,1,1)}
+.tooltipcustom.expand:hover:after{transition:all .2s .1s ease-in-out}
+.titlegreen{text-align:center;text-decoration:underline;font-family:AnasayfaLight;font-size:22px;color:#2779b1;margin-bottom:15px}
+.Background-rights{width:93%;height:84%;border-radius:10px;float:left;opacity:.5;position:absolute;background:url(https://habboo-a.akamaihd.net/c_images/web_promo/limited_promo.png) 95% 30%}
+.LTDunterer{width:100%;float:left;height:50px;margin-top:190px}
+.Pfeil{height:260px;margin:0 auto;width:5px;background:#2779b1}
+.hoch{margin-top:48px;margin-left:-10px;font-size:40px;float:right;top:0;color:#2779b1;position:absolute}
+.runter{margin-bottom:-20px;margin-left:-10px;font-size:40px;bottom:0;color:#2779b1;position:absolute}
+.firstli{border-radius:50px;height:40px;width:40px;color:#fff;background:#2779b1;font-size:20px;text-align:center;margin-bottom:30px;margin-left:-15px;margin-top:15px;padding:10px}
+.ruless{position:relative;text-transform:uppercase;width:175px;background:#2779b1;float:left;height:70px;border-radius:10px}
+.rulessin{margin-top:85px;float:right!important;position:relative;text-transform:uppercase;width:175px;background:#2779b1;height:70px;border-radius:10px}
+.ruless:after{left:100%;top:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(125,180,180,0);border-left-color:#2779b1;border-width:10px;margin-top:-10px}
+.rulessin span{font-size:12px;line-height:1;font-family:AnasayfaLight;word-break:break-all;width:100%;padding:6px;display:block;word-spacing:unset}
+.rulessin:before{right:100%;top:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(125,180,180,0);border-right-color:#2779b1;border-width:10px;margin-top:-10px}
+.firsttitles{text-align:center;font-family:AnasayfaLight;text-decoration:underline;font-size:20px}
+.ruless span{font-size:12px;line-height:1;font-family:AnasayfaLight;word-break:break-all;width:100%;padding:6px;display:block;word-spacing:unset}
+.arrow.right{border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent}
+.arrow{border:10px solid #2779b1;font-size:0;line-height:0;height:0;padding:0;margin:-1px}
+.unten .owl-item{width:200px!important}
+.SubBadge{float:left;width:50px;height:40px;background-image:url(https://d1u5p3l4wpay3k.cloudfront.net/habbo_gamepedia/2/20/ACH_AvatarLooks1.gif);background-repeat:no-repeat}
+.titleLTD{background:#fff;width:40%;color:#2779b1;padding:9px;text-align:center;margin:0 auto;right:0;left:0;margin-top:10px;border-radius:50px;text-transform:uppercase;height:35px;position:absolute;font-family:AnasayfaLight!important}
+.LTDTIMER{width:45%;float:left;height:50px;position:relative}
+.LTDTIMER li{background:#fff;float:left;font-family:Anasayfalight;width:50px;height:50px;margin-left:10px;text-align:center;color:#2779b1;padding:5px;border-radius:50px;font-size:15px}
+.InformationLTD{width:20%;float:right;color:#fff;height:35px;border-bottom-left-radius:10px;border-top-left-radius:10px;position:relative;padding:6px;font-family:AnasayfaLight;margin-top:10px;text-align:center;font-size:17px;background:#fff;color:#2779b1;text-transform:uppercase}
+.LTD{background:#2779b1;width:100%;height:250px;border-radius:10px}
+.unten .owl-stage-outer .owl-stage .owl-item{width:200px!important}
+.unten .owl-stage{width:1500px!important}
+.LTDTIMER li span{float:left;width:100%;font-size:12px;font-family:AnasayfaLight!important}
+.unten .owl-stage-outer{border-bottom-left-radius:10px;border-bottom-right-radius:10px}
+.oben{border-bottom-left-radius:0!important;border-bottom-right-radius:0!important}
+.button{font-size:1em;padding:10px;color:#fff;border:2px solid #06D85F;border-radius:20px/50px;text-decoration:none;cursor:pointer;transition:all .3s ease-out}
+.button:hover{background:#06D85F}
+.overlay{position:fixed;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,0.7);transition:opacity 500ms;visibility:hidden;opacity:0}
+.overlay:target{visibility:visible;opacity:1;z-index:2}
+.popup{margin:70px auto;padding:20px;background:#fff;border-radius:5px;width:75%;position:relative;transition:all 5s ease-in-out}
+.popup h2{margin-top:0;color:#333;font-family:Tahoma,Arial,sans-serif}
+.popup .close{position:absolute;top:20px;right:30px;transition:all 200ms;font-size:30px;font-weight:700;text-decoration:none;color:#333}
+.popup .close:hover{color:#06D85F}
+.popup .content{max-height:30%;overflow:auto;color:#1a73b9}
+.content li{border-bottom:1px dashed gray;padding:5px}
+.GroupBadge{height:130px;width:143px;background-repeat:no-repeat;background-image:url(https://habnet.biz/img/neuebg/ween/bpBgnew.png);bottom:8px;left:0;right:0;float:left;position:absolute;margin:0 auto}
+.menuBP_4{background-position:-572px 0}
+.menuBP_3{background-position:-429px 0}
+.menuBP_7{background-position:-1003px 0}
+.menuBP_5{background-position:-717px 0}
+.menuBP_2{background-position:-285px 0}
+.TaggedGroup:hover{background:#2196f324}
+.TaggedGroup{width:100%;height:175px;position:relative;display:block;padding:10px 15px;background:#2196f333;float:left}
+.menuBP_1{background-position:-143px 0}
+.GroupName{float:left;width:100%;text-align:center;z-index:2222;font-weight:700;text-transform:uppercase;position:inherit}
+.content li .RoomDecoWallpaper{background-image:url(https://habnet.biz/img/album1584/ACH_RoomDecoWallpaper1.gif)!important}
+.content li .RoomDecoFloor{background-image:url(https://habnet.biz/img/album1584/ACH_RoomDecoFloor1.gif)!important}
+.content li .RoomDecoLandscape{background-image:url(https://habnet.biz/img/album1584/ACH_RoomDecoLandscape1.gif)!important}
+.content li .RoomDecoFurniCount{background-image:url(https://habnet.biz/img/album1584/ACH_RoomDecoFurniCount1.gif)!important}
+.content li .BattleBallTilesLocked{background-image:url(https://habnet.biz/img/album1584/ACH_BattleBallTilesLocked1.gif)!important}
+.content li .BattleBallPlayer{background-image:url(https://habnet.biz/img/album1584/ACH_BattleBallPlayer1.gif)!important}
+.content li .BattleBallWinner{background-image:url(https://habnet.biz/img/album1584/ACH_BattleBallWinner1.gif)!important}
+.content li .FootballGoalScored{background-image:url(https://habnet.biz/img/album1584/ACH_FootballGoalScored1.gif)!important}
+.content li .PetLover{background-image:url(https://habnet.biz/img/album1584/ACH_PetLover1.gif)!important}
+.content li .PetLevelUp{background-image:url(https://habnet.biz/img/album1584/ACH_PetLevelUp1.gif)!important}
+.content li .PetRespectGiver{background-image:url(https://habnet.biz/img/album1584/ACH_PetRespectGiver1.gif)!important}
+.content li .RoomEntry{background-image:url(https://habnet.biz/img/album1584/ACH_RoomEntry1.gif)!important}
+.content li .CameraPhotoCount{background-image:url(https://habnet.biz/img/album1584/ACH_CameraPhotoCount1.gif)!important}
+.content li .NotesReceived{background-image:url(https://habnet.biz/img/album1584/ACH_NotesReceived1.gif)!important}
+.content li .NotesLeft{background-image:url(https://habnet.biz/img/album1584/ACH_NotesLeft1.gif)!important}
+.content li .GiftGiver{background-image:url(https://habnet.biz/img/album1584/ACH_GiftGiver1.gif)!important}
+.content li .GiftReceiver{background-image:url(https://habnet.biz/img/album1584/ACH_GiftReceiver1.gif)!important}
+.content li .FriendListSize{background-image:url(https://habnet.biz/img/album1584/ACH_FriendListSize1.gif)!important}
+.content li .RespectEarned{background-image:url(https://habnet.biz/img/album1584/ACH_RespectEarned1.gif)!important}
+.content li .RespectGiven{background-image:url(https://habnet.biz/img/album1584/ACH_RespectGiven1.gif)!important}
+.content li .Online{background-image:url(https://habnet.biz/img/album1584/ACH_AllTimeHotelPresence1.gif)!important}
+.content li .Gercek{background-image:url(https://habnet.biz/img/album1584/ACH_RegistrationDuration1.gif)!important}
+.content li .Gezgin{background-image:url(https://habnet.biz/img/album1584/ACH_Login1.gif)!important}
+.content li .Yumurta{background-image:url(https://habnet.biz/img/album1584/ACH_OpenCrackable1.gif)!important}
+.TitleBasari{width:100%;float:left;height:40px;text-transform:uppercase;padding:8px;color:#fff;background:#1f4c7b;font-size:19px;font-weight:700;text-align:center}
+#feedback-page{text-align:center}
+pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;color:#fff;word-break:break-all;word-wrap:break-word;background-color:#337ab752;border:1px solid #3177b3;border-radius:5px}
+#form-div{-moz-border-radius:7px;-webkit-border-radius:7px;}
+.feedback-input::placeholder{color:#bbbaba;opacity:1}
+.feedback-input {
+    /* font-size: 18px; */
+    border-radius: 5px;
+    line-height: 15px;
+    color: #2d7db3;
+    border: 2px solid #bbbaba;
+    padding: 10px 10px 15px;
+    /* margin-bottom: 0; */
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    /* border: 3px solid rgba(0,0,0,0); */
+}
+textarea{width:100%;height:150px;line-height:150%;resize:vertical}
+#button-blue{font-family:'Montserrat',Arial,Helvetica,sans-serif;float:left;width:100%;border:#fbfbfb solid 4px;cursor:pointer;background-color:#3498db;color:#fff;font-size:24px;padding-top:22px;padding-bottom:22px;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;margin-top:-4px;font-weight:700}
+#button-blue:hover{background-color:rgba(0,0,0,0);color:#0493bd}
+.submit:hover{color:#3498db}
+.ease{width:0;height:74px;background-color:#fbfbfb;-webkit-transition:.3s ease;-moz-transition:.3s ease;-o-transition:.3s ease;-ms-transition:.3s ease;transition:.3s ease}
+.submit:hover .ease{width:100%;background-color:#fff}
+@media only screen and (max-width: 580px) {
+#form-div{left:3%;margin-right:3%;width:88%;margin-left:0;padding-left:3%;padding-right:3%}
+}
+.Left{float:left}
+.Right{float:right}
+.mLeft{float:left;margin-top:-5%}
+.mRight{float:right}
+.Clear{clear:both}
+.red{border-top:3px solid #FF6E6E}
+.kara{border-top:3px solid #156fabe3!important}
+.masmavi{border-top:3px solid #6EACFF!important}
+.disabloo{opacity:.3}
+.col-7_5{width:62.5%}
+#column.info{width:300px;min-height:300px}
+#column .title.rot{background:linear-gradient(rgba(80,125,160,0.92),rgba(12,65,105,0.92));color:#FFF;width:556px}
+#column .title{height:30px;line-height:30px;text-align:center;font-size:13px;letter-spacing:.5px;margin:-3px -10px 10px}
+#column{float:left;width:475px;padding:10px;background:#FFF;border:1px solid rgba(0,0,0,0.2);border-bottom:2px solid rgba(0,0,0,0.2);border-radius:5px;margin-top:10px;margin-right:20px}
+input[type="text"],input[type="password"]{
+	background-color: #fff;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    border-radius: 48px;
+    padding: 11px 24px;
+    display: block;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #b4b4b4;
+    width: 100%;
+    height: 47px;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+	}
+.desci{margin-top:0;font-size:12px;padding:5px;font-family:AnasayfaLight;color:#fff!important}
+input.class[type="submit"]{display:inline-block;position:relative;cursor:pointer;color:#fff;min-height:36px;min-width:88px;line-height:36px;vertical-align:middle;-webkit-box-align:center;-webkit-align-items:center;-ms-grid-row-align:center;align-items:center;text-align:center;border-radius:3px;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:0;padding:0 6px;margin:15px 8px;background:0 0;white-space:nowrap;text-transform:uppercase;font-weight:500;font-size:14px;font-style:inherit;font-variant:inherit;font-family:inherit;text-decoration:none;background-color:#009688;overflow:hidden;-webkit-transition:box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);transition:box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);letter-spacing:.01em}
+.deletingsmth input[type="submit"]{display:inline-block;position:relative;cursor:pointer;color:#fff;min-height:36px;min-width:88px;line-height:36px;vertical-align:middle;-webkit-box-align:center;-webkit-align-items:center;-ms-grid-row-align:center;align-items:center;text-align:center;border-radius:3px;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:0;padding:0 6px;margin:15px 8px;background:0 0;white-space:nowrap;text-transform:uppercase;font-weight:500;font-size:14px;font-style:inherit;font-variant:inherit;font-family:inherit;text-decoration:none;background-color:#f44336bd !importat;overflow:hidden;-webkit-transition:box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);transition:box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);letter-spacing:.01em}
+.md-toolbar-tools h2{color:rgba(0,0,0,.7);text-transform:uppercase;letter-spacing:1px;font-weight:400;font-size:inherit;font-family:'Roboto Condensed',sans-serif!important}
+habbo-icon.user{width:10px;height:16px;background:transparent url(https://habnet.biz/Images/icons/user.gif) no-repeat}
+habbo-icon.space-right{margin-right:10px}
+habbo-icon{display:inline-block;image-rendering:pixelated;outline:0}
+#loading-wrapper{position:fixed;width:100%;height:100%;left:0;top:0}
+#loading-text{display:block;position:absolute;top:50%;left:50%;color:#fff;width:100px;height:30px;margin:-7px 0 0 -45px;text-align:center;font-family:'PT Sans Narrow',sans-serif;font-size:20px}
+#loading-content{display:block;position:relative;left:50%;top:50%;width:170px;height:170px;margin:-85px 0 0 -85px;border:3px solid red}
+#loading-content:after{content:"";position:absolute;border:3px solid #0F0;left:15px;right:15px;top:15px;bottom:15px}
+#loading-content:before{content:"";position:absolute;border:3px solid #00F;left:5px;right:5px;top:5px;bottom:5px}
+#loading-content{border:3px solid transparent;border-top-color:#4D658D;border-bottom-color:#4D658D;border-radius:50%;-webkit-animation:loader 2s linear infinite;-moz-animation:loader 2s linear infinite;-o-animation:loader 2s linear infinite;animation:loader 2s linear infinite}
+#loading-content:before{border:3px solid transparent;border-top-color:#D4CC6A;border-bottom-color:#D4CC6A;border-radius:50%;-webkit-animation:loader 3s linear infinite;-moz-animation:loader 2s linear infinite;-o-animation:loader 2s linear infinite;animation:loader 3s linear infinite}
+#loading-content:after{border:3px solid transparent;border-top-color:#84417C;border-bottom-color:#84417C;border-radius:50%;-webkit-animation:loader 1.5s linear infinite;animation:loader 1.5s linear infinite;-moz-animation:loader 2s linear infinite;-o-animation:loader 2s linear infinite}
+@-webkit-keyframes loaders {
+0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}
+100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
+}
+@keyframes loader {
+0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}
+100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
+}
+#content-wrapper{color:#FFF;position:fixed;left:0;top:20px;width:100%;height:100%}
+#content{width:800px;height:1000px;margin:0 auto;text-align:center}
+#loader-wrapper .loader-section{position:fixed;top:0;width:100%;height:100%;background:linear-gradient(#337ab75e,#337ab78c);z-index:1000}
+#loader-wrapper .loader-section.section-left{left:0}
+#loader-wrapper .loader-section.section-right{right:0}
+#loader{z-index:1001}
+h1{color:#EEE}
+.loaded #loader-wrapper .loader-section.section-left{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%)}
+.loaded #loader-wrapper .loader-section.section-right{-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%)}
+.loaded #loader{opacity:0}
+.loaded #loader-wrapper{visibility:hidden}
+.loaded #loader{opacity:0;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
+.loaded #loader-wrapper .loader-section.section-right,.loaded #loader-wrapper .loader-section.section-left{-webkit-transition:all .1s .1s ease-out;transition:all .1s .1s ease-out}
+.loaded #loader-wrapper{-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:all .1s .3s ease-out;transition:all .1s .3s ease-out}
+.loaded #loader-wrapper .loader-section.section-right,.loaded #loader-wrapper .loader-section.section-left{-webkit-transition:all .7s .3s cubic-bezier(0.645,0.045,0.355,1.000);transition:all .7s .3s cubic-bezier(0.645,0.045,0.355,1.000)}
+.loaded #loader-wrapper{-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:all .3s 1s ease-out;transition:all .3s 1s ease-out}
+.md-toolbar-tools.center{display:flex;justify-content:center;align-items:center}
+.md-toolbar-tools{padding:0 20px!important;border-bottom:1px solid #e4eaec;background-color:#fff;font-size:20px;letter-spacing:.005em;box-sizing:border-box;font-weight:400;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;flex-direction:row;width:100%;height:64px;max-height:64px;padding:0 16px;margin:0}
+.user-avatar img{width:64px;height:110px;image-rendering:pixelated}
+.user-avatar{width:64px;height:110px;margin:0 auto;text-align:center}
+.table{width:100%;max-width:100%;border-collapse:collapse;border-spacing:0;overflow:hidden}
+tbody{display:table-row-group;vertical-align:middle;border-color:inherit}
+.table-striped>tbody>tr:nth-of-type(odd){background-color:#2196f361!important}
+.table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th{padding:8px;line-height:1.42857143;vertical-align:top;font-family:'Roboto Condensed',sans-serif!important;border-top:1px solid #ddd}
+th{text-align:left}
+.table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th{max-width:140px;padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd;font-family:'Roboto Condensed',sans-serif!important}
+td,th{padding:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:table-cell;vertical-align:inherit}
+td{font-weight:300!important}
+.HesapAYARLAR{margin-bottom:116px;width:27%!important;background:#fff;height:433px;box-shadow:0 1px 5px 0 rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12)}
+.HesapAYARLARrechts{width:100%;background:#2779b1;float:left;height:420px;border-radius:10px}
+#rightContent .nav-tabs>li.active>a{border:none!important}
+#rightContent .nav-tabs>li.active{border-bottom:2px solid #dd2c00!important}
+#rightContent .nav-tabs>li.active>a{color:#009688!important}
+#rightContent .nav-tabs>li>a{color:rgba(0,0,0,0.54)!important}
+.Informationbox{width:55%;height:100%;float:left}
+#game li , #group li{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e6e6e6;
+    height: 45px;
+    list-style: none;
+}.ganzrechts{float:right;margin-right:15px}
+#game li p , #group  li p{
+    color: #6b6b6b;
+    width: 75%;
+    float: left;
+    list-style: none;
+    padding: 5px;
+    /* font-size: 17px; */
+    /* font-family: 'Roboto Condensed',sans-serif!important; */
+    /* font-weight: 300!important; */
+}.Zaehler li{margin-right:1px;float:left;list-style:none}
+.Zaehler{height:40px;padding:5px}
+.Zaehler li a{min-width:30px;height:28px;display:block;background:#2779b1;font-size:20px;border-radius:10px;color:#fff;font-family:anasayfaLight;text-align:center}
+.Zaehler li a:hover{    background: #2177b49c;}
+.Zaehler .active{height:28px!important;color:#fff!important;    background: #0d4b77!important;}
+.disabled{display:none}
+.Zaehlerli:nth-child(1){border-radius:3px}
+.slider li .top > h1 > a:hover{text-decoration:underline}
+#slider{position:relative;width:605px;height:300px;margin-top:15px;float:left}
+.slider li{height:250px}
+#slider .item{display:block;width:100%;height:300px;background-repeat:no-repeat;background-position:50%}
+.slider li .top{padding:15px}
+.slider li .bottom{background:rgba(0,0,0,0.51);padding:14px;width:100%;position:absolute;bottom:0;left:0;height:40px}
+.vTable{display:table;width:100%;vertical-align:middle}
+.vCell50,.vCell{display:table-cell;vertical-align:middle}
+.newDialogStyleButtonSmall{width:auto;display:inline-block}
+.newDialogStyleButtonSmall,.newDialogStyleButton{outline:none!important;text-decoration:none!important;color:#fff!important;background:#0b5f96;border:none;border-radius:25px;font-size:15px;display:block;width:45%;float:right;cursor:pointer;margin:0;margin-right:25px;margin-top:0;padding:8px 15px;text-align:center;font-weight:600;transition:all .4s ease;-webkit-transition:all .4s ease;-moz-transition:all .4s ease;-ms-transition:all .4s ease;-o-transition:all .4s ease}
+.newDialogStyleButtonSmall:hover,.newDialogStyleButton:hover{outline:none!important;text-decoration:none!important;color:#fff!important;background:#337ab7;border:none}
+.slider li .top > h1,.slider li .top > h1 > a,.slider li .top > h1 > a:hover{color:#fff;font-size:21px;font-weight:700}
+.slider li .description{font-size:11pt;padding:0;color:#fff;font-style:italic;font-weight:400}
+.toplist{width:216px;height:75px;background:#2b4869;float:left;margin-left:6px}
+.toplist .userBox.bg_2{height:70px;width:70px}
+.bg_1{background:url(https://habnet.biz/Images/bg_1.png) no-repeat center center}
+.bg_2{background:url(https://habnet.biz/Images/bg_2.png) no-repeat center center}
+.bg_3{background:url(https://habnet.biz/Images/bg_3.png) no-repeat center center}
+.row{margin-right:-15px;margin-left:-15px}
+.gaestebuch .card{background:#fff;border-radius:4px;margin-bottom:10px}
+.timestamp{font-size:12px;margin-top:20px}
+.boxhaber{background-color:#2779b1;margin-bottom:20px;font-size:14px;padding:13px;font-family:Roboto;line-height:150%;font-weight:lighter;color:#fff;box-shadow:0 0 5px rgba(0,0,0,0.05)}
+.ontitled{background:#2779b1;width:97%;float:left;padding:10px;margin-bottom:10px;font-family:AnasayfaLight;border-radius:10px;font-size:20px;text-align:center}
+.ontitled:hover{background:#a3caca border-radius: 0!important}
+#Hesap{background-color:#2779b1;width:97%;text-align:center;color:#fff;margin-bottom:15px;padding:10px;font-family:AnasayfaLight;border-bottom-left-radius:10px;display:none;border-bottom-right-radius:10px}
+#Yasaklanma{background-color:#2779b1;width:97%;text-align:center;color:#fff;margin-bottom:15px;padding:10px;font-family:AnasayfaLight;border-bottom-left-radius:10px;display:none;border-bottom-right-radius:10px}
+#baglanti{background-color:#2779b1;width:97%;text-align:center;color:#fff;margin-bottom:15px;padding:10px;font-family:AnasayfaLight;border-bottom-left-radius:10px;display:none;border-bottom-right-radius:10px}
+#reklamsorunu{background-color:#2779b1;width:97%;text-align:center;color:#fff;margin-bottom:15px;padding:10px;font-family:AnasayfaLight;border-bottom-left-radius:10px;display:none;border-bottom-right-radius:10px}
+#SSS b{text-decoration:underline;font-family:AnasayfaLight;font-size:17px;font-weight:400!important}
+.newhaberresim{height:200px;float:left;position:relative;width:200px;z-index:222;border:2px solid #2e6da4;border-radius:50%}
+.newhaberbox{background:rgba(0,0,0,0.33) none repeat scroll 0 0;margin-top:110px;height:125px;width:450px;z-index:22;float:left;position:relative;border-radius:10px;margin-left:-80px;padding:30px}
+.newhaberler{width:64%;float:left}
+.newhaberler:nth-last-child(2){float:right}
+.newhaberbox:nth-last-child(2){margin-right:-80px;float:right}
+.newshabertitle{font-size:15px;color:#fff}
+.new {
+    height: auto;
+    /* display: flow-root; */
+    /* width: 100%; */
+    padding: 9px;
+    /* font-size: 13px; */
+    /* line-height: 1.42857143; */
+    color: #333;
+    background-color: #ffffff;
+    /* border-radius: 5px; */
+    min-height: 150px;
+}.abstand{margin-top:15px}
+.navigatorumuz{margin:0 auto;width:76%;height:40px;display:block}
+.icerigimiz{margin:0 auto;width:99%}
+.userlook {
+    float: right;
+    height: 120px;
+    margin-top: 0px;
+    width: 20%;
+}.userlookname{text-align:center;float:right;width:100%;margin-top:110px;font-size:16px}
+.userlookticket {
+    text-align: left;
+    width: 80%;
+    height: 30px;
+    font-size: 16px;
+}.userlookmesaj{word-break:break-all;width:75%;text-align:left;height:auto;padding:5px}
+.persolook {
+    float: left;
+    height: 120px;
+    width: 20%;
+}.persolookname{text-align:center;float:left;width:100%;margin-top:110px;font-size:16px}
+.persolookkonu {
+    text-align: right;
+    /* font-family: AnasayfaLight; */
+    width: 80%;
+    float: right;
+    /* font-weight: 700; */
+    font-size: 16px;
+}.persolookcevap{word-break:break-all;float:right;width:75%;text-align:right;height:auto;padding:5px}
+.Supportickets{width:100%;height:auto;text-align:center}
+.baslikalani{color:#2779b1;font-family:AnasayfaLight;padding:0;font-size:25px}
+::placeholder{color:#757581;opacity:1}
+.danger{color:#a5050578;font-family:AnasayfaLight;font-style:italic}
+.FansiteBoxing{background:#1d71a8ed;padding:10px;border-radius:10px;width:74%;margin:0 auto 8%}
+.Halbkreis span{position:absolute;font-family:AnasayfaLight;-moz-transform:scale(1) rotate(-10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);-webkit-transform:scale(1) rotate(-10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);-o-transform:scale(1) rotate(-10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);-ms-transform:scale(1) rotate(-10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);transform:scale(1) rotate(181deg) translateX(-45px) translateY(-15px) skewX(0deg) skewY(0deg);font-size:18px}
+.Halbkreis{display:block;top:0;right:0;float:left;left:0;width:140px;margin-left:265px;height:60px;border-radius:200px 200px 0 0;background-color:#2779b1;transform:rotate(180deg)}
+.Konu a{    color: #bcbbbb;}
+.LastSolution {
+    background: #1a6498;
+    margin-top: 8%;
+    height: 50px;
+    padding: 13px;
+    text-align: left;
+    border-radius: 10px;
+    width: 97%;
+    float: left;
+    font-family: AnasayfaLight;
+}.SettingsIcon{margin:0 auto;width:90px;display:block;margin-top:-88px;height:90px;font-size:50px;padding:12px;border-radius:50%;text-align:center;    background: #13629a;}
+.AvatarNameON{width:14%;background:#2779b1;border-radius:10px;color:#fff;height:30px;margin-top:-30px;position:absolute;padding:5px}
+.AvatarNameON b{font-family:AnasayfaLight}
+:-ms-input-placeholder{color:#2779b1}
+.opentickets {
+    color: #2779b1;
+    text-align: left;
+    /* float: left; */
+    /* border-radius: 10px; */
+    /* text-align: center; */
+    font-size: 15px;
+    /* font-family: AnasayfaLight; */
+}.Konu {
+    transition: .3s;
+    /* float: left; */
+    /* width: 101%; */
+    /* background: #eae9e966; */
+    /* font-family: AnasayfaLight; */
+    font-weight: 400;
+    /* padding: 5px; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* border-radius: 10px; */
+    /* font-size: 13px; */
+    text-align: left;
+    /* margin-left: 40px; */
+    /* margin-bottom: 5px; */
+    color: #bcbbbb;
+    /* padding-left: 10px; */
+}.openkonu{float:left;width:80%;line-height:1.5}
+.opendurum{float:right;width:16%;background:#fff;text-align:center;height:25px;border-radius:10px;padding:4px;line-height:-.8;font-family:AnasayfaLight;color:#2779b1}
+.closedtickets{background:#2779b1;padding:10px;float:left;border-radius:10px;text-align:center;font-size:20px;font-family:AnasayfaLight;width:100%}
+.secenekler {
+    width: 100%;
+    height: 45px;
+    margin: 10px 0px !important;    /* font-family: AnasayfaLight; */
+    color: #2779b1;
+}.avatari img:hover{opacity:.7}
+.grid_3{width:270px;float:left}
+.TITLED{color:#000;font-weight:700;font-size:17px;margin-top:5px;margin-bottom:10px}
+.grid_9{width:580px;float:right}
+.red{border-top:3px solid #FF6E6E}
+.listening{width:100%;padding:5px}
+textarea{display:block;padding:10px;width:95%;border:0;-webkit-box-shadow:0;-webkit-appearance:none;border:1px solid #ccc;border-bottom:1px solid #ccc;min-height:90px;border-radius:0}
+.listening textarea{display:block;padding:10px;color:#2779b1;width:100%;border-radius:10px;-webkit-box-shadow:0;-webkit-appearance:none;height:120px}
+.listening.even.border-bottom{border-radius:0 0 0 0;margin-bottom:-13px}
+.boxhaber .listening:hover{opacity:.5}
+#rating{float:right;width:99%;padding:5px;height:100%}
+#rating .btn{display:inline-block;padding:5px 10px;margin-bottom:0;font-family:AnasayfaLight;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px}
+.Bari{width:653px;margin-top:0;height:50px;border:1px solid gray!important;border-radius:6px!important;margin-bottom:15px;border-top:0 solid #fff!important;border-top-right-radius:0!important;border-top-left-radius:0!important}
+.header .icon{margin-right:5px;display:inline-block;width:32px;height:32px;background-repeat:no-repeat;background-position:50%}
+.header .icon,.header span{vertical-align:middle;font-size:14px;font-weight:600}
+#sidebar .article-list .avatarImage,#sidebar .friends .avatarImage{width:35px;height:35px;border-color:#0b5f96;border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.2);border-radius:50%;background-repeat:no-repeat;background-position:50% 25%}
+.grid-o-left{float:left;width:305px;margin-right:10px}
+.header-height{height:30px;vertical-align:middle}
+#sidebar{width:100%;height:730px;background:#2779b1;overflow-y:auto;border-bottom-left-radius:10px;text-decoration:none;border-bottom-right-radius:10px}
+.article-list li a .userimage{width:40px;float:left}
+#sidebar .article-list li a .article-details{padding-top:2px}
+a:hover{text-decoration:none}
+.article-list li a .article-details,.friends li a .userdetails{width:auto;float:none;overflow:hidden;padding-left:10px;padding-top:11px}
+.article-list li a b{display:block;font-size:90%;color:#fff;font-weight:600!important}
+.article-list li a span{color:#fff!important;font-size:8pt;font-weight:400}
+.articleInfoBox{color:#fff;font-size:10pt;font-weight:500}
+.articleInfoBox h3{font-size:17pt;margin-top:0!important;font-style:italic;font-family:AnasayfaLight}
+.articleContent p{font-family:unset}
+.articleContent hr{border:none;border-top:2px solid #fff;margin:0 0 24px;width:100%}
+.articleContent h3 strong,.articleContent p strong{font-family:unset}
+.articleInfoBox p{font-size:10pt;font-style:italic;color:#fff;font-family:AnasayfaLight;margin:0 0 15px;word-break:break-all}
+.newDivider{width:100%;height:1px;background:#ececec;margin:15px 0}
+#sidebar .article-list li:not(.custom-content) a:hover{background:rgba(0,0,0,.05)}
+.contentBoxArticle{font-size:12pt;font-weight:400;padding:20px;color:#6b6f7a}
+.contentBox{overflow:hidden;overflow-y:auto;padding:15px;color:#fff;background:#2779b1;font-size:10pt;font-weight:500}
+.article-list li:not(.custom-content) a{display:block;padding:15px 20px;border-bottom:none;border-right:4px solid transparent;transition:all .4s ease;-webkit-transition:all .4s ease;-o-transition:all .4s ease;-moz-transition:all .4s ease;-ms-transition:all .4s ease}
+#sidebar .article-list .avatarImage{width:40px;height:40px;border-color:#0b5f96}
+.module-header{padding:0;line-height:1.5;font-size:.915em;font-weight:700;width:100%;color:#262626;text-transform:uppercase;float:left}
+.admin-online{text-indent:-9999px;width:2px;position:absolute;margin-top:4px;margin-left:7px;height:2px;border:5px solid #73F375;box-shadow:0 0 0 1px rgba(0,0,0,0.2);border-radius:50%}
+.offline{border:5px solid #F37373}
+.brnPersonelDivImg{position:absolute;top:0;left:10px;float:left;background-repeat:no-repeat;background-position:center 15%;width:50px;height:107px;filter:grayscale(100%) blur(5px);-webkit-filter:grayscale(100%) blur(5px);-moz-filter:grayscale(100%) blur(5px)z-index:1}
+.brnPersonelDivImg2{position:absolute;top:0;left:10px;float:left;background-repeat:no-repeat;background-position:center 15%;width:50px;height:75px;z-index:2}
+.brnIStyle{font-size:12px}
+.brnPersonelDiv:last-child{border-bottom:none}
+.brnFloats_1{width:545px;margin-right:0}
+.brnFloats_2{float:left;width:565px}
+.brnFloats_3{color:#000;float:right;width:300px}
+.info .username{position:absolute;color:#000;font-weight:700;font-size:15px;margin-top:15px;margin-left:0}
+.info .motto{position:absolute;width:220px;font-size:13px;margin-top:35px;margin-left:0}
+.info .online{position:absolute;font-size:13px;margin-top:75px;margin-left:0;width:250px}
+.info .story{padding-top:10px;font-size:13px}
+.info .userinfo{width:100%;height:110px;border-bottom:1px dotted #ccc}
+.submit.green{background:#2AA12C;border-bottom:2px solid #218123}
+hr.line{margin:10px 0;height:1px;background-color:#e1e1e1}
+.box hr{height:3px;background-color:rgba(236,236,236,.5);z-index:1;margin:0 0 15px;border:none}
+.submit{border-radius:3px;border:0;cursor:pointer;text-align:center;height:30px;background:#3BA800;border-bottom:2px solid #2C7E00;color:#FFF;width:100%}
+#news{width:65%;height:300px;border-radius:5px;margin-top:10px}
+ul.bilgiler{padding:0;margin:0;list-style-type:none;font-size:13px;margin-top:3px}
+ul.bilgiler li:nth-child(2n+1){background:rgba(0,0,0,0.05)}
+ul.bilgiler li{padding:10px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.slide{animation:slide ease 1s;animation-iteration-count:1;transform-origin:50% 50%;animation-fill-mode:forwards;-webkit-animation:slide ease 1s;-webkit-animation-iteration-count:1;-webkit-transform-origin:50% 50%;-webkit-animation-fill-mode:forwards;-moz-animation:slide ease 1s;-moz-animation-iteration-count:1;-moz-transform-origin:50% 50%;-moz-animation-fill-mode:forwards;-o-animation:slide ease 1s;-o-animation-iteration-count:1;-o-transform-origin:50% 50%;-o-animation-fill-mode:forwards;-ms-animation:slide ease 1s;-ms-animation-iteration-count:1;-ms-transform-origin:50% 50%;-ms-animation-fill-mode:forwards}
+@keyframes slide {
+0%{opacity:0;transform:translate(-1500px,0px)}
+60%{opacity:1;transform:translate(30px,0px)}
+80%{transform:translate(-10px,0px)}
+100%{opacity:1;transform:translate(0px,0px)}
+}
+@-moz-keyframes slide {
+0%{opacity:0;-moz-transform:translate(-1500px,0px)}
+60%{opacity:1;-moz-transform:translate(30px,0px)}
+80%{-moz-transform:translate(-10px,0px)}
+100%{opacity:1;-moz-transform:translate(0px,0px)}
+}
+@-webkit-keyframes slide {
+0%{opacity:0;-webkit-transform:translate(-1500px,0px)}
+60%{opacity:1;-webkit-transform:translate(30px,0px)}
+80%{-webkit-transform:translate(-10px,0px)}
+100%{opacity:1;-webkit-transform:translate(0px,0px)}
+}
+@-o-keyframes slide {
+0%{opacity:0;-o-transform:translate(-1500px,0px)}
+60%{opacity:1;-o-transform:translate(30px,0px)}
+80%{-o-transform:translate(-10px,0px)}
+100%{opacity:1;-o-transform:translate(0px,0px)}
+}
+@-ms-keyframes slide {
+0%{opacity:0;-ms-transform:translate(-1500px,0px)}
+60%{opacity:1;-ms-transform:translate(30px,0px)}
+80%{-ms-transform:translate(-10px,0px)}
+100%{opacity:1;-ms-transform:translate(0px,0px)}
+}
+.marker,.r,.e1,.s1,.s2,.e2,.e3,.e4,.e5,.d{animation-timing-function:cubic-bezier(0.15,-0.01,0.58,1);animation-duration:5s;animation-iteration-count:infinite;will-change:transform}
+.marker{position:absolute;top:4rem;left:-3rem;height:3rem;width:40rem;background:linear-gradient(to bottom,#3cb061 0%,#3cb061 50%,#2ba453 51%,#2ba453 100%);animation-name:marker}
+.r{margin-left:1rem;animation-name:r}
+.d{margin-left:1rem;animation-name:d}
+.e1{margin-left:1rem;animation-name:e1}
+.s1{margin-left:1rem;animation-name:s1}
+.s2{margin-left:1rem;animation-name:s2}
+.e2{margin-left:1rem;animation-name:e2}
+.e3{margin-left:1rem;animation-name:e3}
+.e4{margin-left:1rem;animation-name:e4}
+.e5{margin-left:1rem;animation-name:e5}
+@keyframes d {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes r {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes e1 {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes s1 {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes s2 {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes e2 {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes e3 {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes e4 {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes e5 {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(10rem)}
+}
+@keyframes marker {
+0%,20%{transform:translateX(0)}
+50%,70%{transform:translateX(40rem)}
+}
+.habboRSSlider{float:left;height:300px;width:100%}
+.opa{opacity:.75;filter:Alpha(Opacity=75)}
+.habboRSSlider li{float:left;background:green;height:100%;width:100%;border-radius:3px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.40)}
+.newslink{color:#fff;text-decoration:none;text-align:left;float:left;width:93%;font-size:24px;font-weight:700;margin:20px 0 0 20px}
+.promo-container p{float:left;color:#fff;width:300px;font-size:16px;text-align:left;margin:0 0 0 20px}
+#newsAvatar{float:left;width:75px;height:70px;margin-top:-15px;margin-left:-10px;margin-bottom:10px}
+#slickDiv{margin-top:5px;border-top:1px dashed #999}
+#slickContent.haber{border:none;height:50px;width:100%}
+.kategorie{margin-left:-10px;cursor:pointer;width:100%;padding:0;padding-left:15px;height:40px;line-height:40px;font-weight:lighter}
+.kategorie.selected{font-weight:700}
+.avatardouze{margin-top:50px;margin-left:30px;position:absolute;z-index:4}
+.avatarbir{margin-top:25px;margin-left:65px;position:absolute}
+.avatarthree{margin-top:65px;margin-left:96px;position:absolute}
+#Stats li{display:inline-block;font-size:11px;margin-right:10px;font-weight:700;line-height:25px;text-transform:uppercase}
+#Stats{float:right;background:rgba(0,0,0,.5);margin-top:3%;width:auto;height:51px}
+#Sosyalmedya{width:900px;height:300px;color:#000;margin-top:10px}
+#User-Stats span{color:#6588b0}
+#User-Stats h1{display:block;margin:0;padding:0;font-size:14pt}
+#User-Stats ul{display:inline-block;margin:8px 0 0;margin-right:10px;padding-left:10px;border-left:1px solid #4a77aa}
+#User-Stats ul:last-child{margin-right:0}
+#User-Stats ul li{text-align:left}
+#Wrapper{min-height:660px;position:relative;width:950px;margin:0 auto;    margin-top: 2%;}
+#Wrapper .Me-Container{height:302px;width:260px;margin-top:10px;float:right}
+#Wrapper .Container{background:#2b4869;padding:15px}
+#Wrapper .Box1{background:url(/Images/profilpicture.png) repeat scroll 0 55%;border:3px solid #2b4869;height:100px;width:99%;margin-bottom:10px}
+.profilboxes{background-color:#2b4869;border:3px solid #fff;height:250px;width:49%;display:inline-block}
+#leftContent{width:590px;float:left}
+#contentBox.left{width:580px}
+#contentBox{padding:5px;background:#fff;border:1px solid #ADADAD;border-bottom:2px solid #ADADAD;margin:10px 0 0;border-radius:5px}
+#contentTitle.blue,#contentTitleAlert.blue{background:linear-gradient(rgba(80,125,160,0.92),rgba(12,65,105,0.92)),url(/Images/butBG.png)}
+#contentTitle.red,#contentTitleAlert.red{background:#911 url(/Images/butBG.png)}
+#contentPadding{padding:10px;color:#000;font-family:Arial!important;font-size:12px}
+#rightContent{width:300px;float:right}
+#contentBox{padding:5px;background:#2779b1;border:1px solid #ADADAD;border-bottom:2px solid #ADADAD;margin:10px 0 0;border-radius:5px}
+#contentTitle{font-family:Arial!important;font-size:12px;color:#fff;height:35px;line-height:35px;text-align:left;text-indent:10px;font-weight:700;border-radius:3px;letter-spacing:.5px;background-image:url(https://habnet.biz/Images/butBG.png);box-shadow:inset 0 0 2px 2px rgba(0,0,0,.2);text-shadow:.18em .18em 0 rgba(0,0,0,.1)}
+.blue{background:blue url(https://habnet.biz/Images/butBG.png)}
+.user_box{height:60px;background:rgba(0,0,0,0.04);margin:10px -10px 10px 10px;position:relative;transition:margin .5s;border-radius:4px;width:97%}
+.user_box:hover{margin:10px -10px 10px 5px}
+#avatar{height:56px;width:33px;position:absolute;margin-left:20px}
+.name{font-size:17px;font-weight:700;position:absolute;margin-top:12px;margin-left:50px;color:rgba(0,0,0,0.8);text-decoration:none}
+.desc{position:absolute;color:rgba(0,0,0,0.7);text-decoration:none;bottom:10px;margin-left:50px}
+.isim{margin-bottom:0;font-weight:400;word-break:break-all;display:inline-block;color:#1d2129;word-wrap:normal;font-family:"Open Sans"}
+hr{border:none;border-top:2px solid #ccc;margin:0 0 24px;width:100%}
+#saveButton:hover{background:#345984}
+#saveButton{float:right;height:32px;line-height:32px;font-family:Arial!important;font-size:12px;font-weight:700;border:0;margin:15px 0 0;background:#2b4869 url(../img/butBG.png);color:#fff;padding:0 16px;border-radius:2px;cursor:pointer;box-shadow:inset 0 0 2px 2px rgba(0,0,0,.2);text-shadow:.18em .18em 0 rgba(0,0,0,.1)}
+#news:hover{opacity:1}
+#SubNavi{width:900px;height:45px;background-color:#fff;border-bottom-left-radius:3px;border-bottom-right-radius:3px;background:#FFF;border:1px solid rgba(0,0,0,0.2);border-bottom:2px solid rgba(0,0,0,0.2);margin-left:auto;margin-right:auto}
+#SubNavi ul a li{float:left;color:#6C7A89;font-weight:400;font-size:14px;list-style:none;padding-right:15px;padding-left:15px;border-right:1px solid #ccc;transition:all 200ms}
+.grey{border-top:3px solid #585858}
+.fansitebanerleri:hover{opacity:.7}
+.tablink{color:#fff;float:left;border:none;background-color:#2779b1;display:inline-block;padding:4px 30px;margin-right:19px;border-top-right-radius:10px;font-size:20px;font-family:AnasayfaLight;text-align:left;width:auto;border-bottom-right-radius:10px}
+.tablink:hover{background-color:#a3caca}
+.tabcontent{color:#fff;display:none;text-align:center}
+.uzmanrozeti{margin-top:0;margin-left:30px;position:absolute}
+.birkisi{width:135px;height:140px;margin-bottom:10px;margin-right:17px;float:left}
+.BackgroundRight{background:url(https://habnet.biz/Images/paris15_background_right.png);background-position:right bottom;background-attachment:fixed;background-repeat:no-repeat}
+.mainavatarimiz{text-align:center;width:135px;float:left;height:135px;border-radius:50%;background:#2779b1}
+#Fansiteler{background-color:transparent}
+#Yardimcilar{background-color:transparent}
+#Hizmeti{background-color:transparent}
+#SubNavi ul li a{color:#6C7A89}
+#SubNavi ul li:last-child{margin-right:0}
+#TopBar ul li.selected{opacity:1}
+#TopBar ul li:last-child{margin-right:0}
+#TopBar{position:relative;width:100%;height:48px;background:#212121;box-shadow:0 0 0 3px rgba(0,0,0,0.2)}
+#column.successio{text-align:center;width:930px;line-height:15px;background:#FCAC5C url(/Images/butBG.png);border:0;font-weight:700;border-radius:3px;color:#fff!important;font-size:13px}
+#column.error{text-align:center;width:930px;line-height:15px;background:#B62B1C;border:0;border-bottom:2px solid #661A12;color:#FFF;border-radius:3px;font-size:13px;display:none}
+#column.alert{text-align:center;width:930px;line-height:15px;background:#B62B1C;border:0;border-bottom:2px solid #661A12;color:#FFF;border-radius:3px;font-size:13px}
+#column.right{margin-right:0}
+#column{width:468px;padding:10px;border-bottom:2px solid rgba(0,0,0,0.2);border-radius:5px;margin-bottom:10px;margin-right:20px}
+.Alert .Alert-Info{height:110px;width:110px;display:inline-block;margin-top:-47px;background:#911 url(/Images/Frank2.gif) repeat scroll 0 0;margin-left:-130px;float:left;border-radius:50%;margin-top:-40px}
+.Alert span{color:#fff}
+.Avatar{width:100%;position:absolute;margin-top:-45px}
+.Avatar .Figure{width:128px;height:128px;border-radius:50%;border:2px solid #fff;position:relative;margin:0 auto}
+#Header .Logo .online span{color:#fff}
+#Header{width:100%;margin:0 auto;background:url(https://habnet.biz/Web/Images/yWEIXa3.png),url(https://habboo-a.akamaihd.net/c_images/reception/background_right_easter2016.png) ,url(https://habnet.biz/Images/header_16.png);background-position:0 -150px,right top -235px,-113px 0;background-repeat:no-repeat,no-repeat,repeat;height:165px}
+.Logomuz{height:170px;width:345px;margin:0 auto}
+.Logomuz img:hover{opacity:.5}
+.Logomuz img{transition:1s}
+.Infolar i{color:#fff;font-size:30px;margin-top:15px;height:30px}
+.kisatitle{width:100%;position:relative;padding:0;font-family:Anasayfalight;text-transform:uppercase}
+.Infolar{width:100%;margin-left:18%}
+.onlinesayisi{top:110px;position:absolute;background:rgba(0,0,0,0.43) none repeat scroll 0 0;padding:5px 39px;border-radius:5px;margin-left:30px}
+.givesinfo{background:#1d71a8ed;padding:7px 15px;border-radius:5px;margin-bottom:20px;font-family:AnasayfaLight!important;font-size:15px;}
+#Reklam {
+    height: 600px;
+    width: 160px;
+    left: 0;
+    margin-top: 25px;
+    float: left;
+    position: absolute;
+    box-shadow: 0 0 5px #898989;
+}#Reklamright {
+    height: 600px;
+    width: 162px;
+    margin-top: 25px;
+    box-shadow: 0 0 5px #898989;
+    right: 0;
+    float: right;
+    position: absolute;
+	}.tooltipsloo{font-weight:400;font-size:19px;text-decoration:none!important;background:none;display:table-cell;padding:0;vertical-align:middle;border-spacing:0;border-radius:50%;color:#c4c4c4;border:2px solid #c4c4c4;text-align:center;transition:all .4s ease;-webkit-transition:all .4s ease;-o-transition:all .4s ease;-ms-transition:all .4s ease;-moz-transition:all .4s ease;height:26px;width:26px}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#Footer {
+    height: 115px;
+    /* font-size: 8pt; */
+    /* right: 0; */
+    /* bottom: 0; */
+    background-color: #333;
+    padding: 25px 0 23px;
+    padding: 25px 0 23px;
+    text-align: center;
+    color: #c1c1c1 !important;
+    /* left: 0; */
+    /* padding: 1rem; */
+    text-align: center;
+    /* margin-top: 10px; */
+}
+.page-container[data-page = "home"] .page-content .articles-container .article-container .article-content:hover .article-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+a {
+    text-decoration: none;
+}
+#Footer li{
+    list-style: none;
+    font-size: 13px;
+    text-decoration: none !important;
+    /* text-decoration-line: blink; */
+}
+#Footer p, #Footer a{margin:0;padding:0;color:#c1c1c1}
+#Footer a:hover{    color: #8c8c8c;
+    text-decoration: none;}
+.facebookFOOTER{background-image:url(/Images/spirit.png);background-position:-332px -315px;height:30px;width:30px}
+.twitterFOOTER{background-image:url(/Images/spirit.png);background-position:-300px -347px;height:30px;width:30px}
+.followus li{float:left;margin-right:2px}
+.instagramFOOTER{background-image:url(/Images/INST.png);height:30px;width:30px}
+.links li{float:left;margin-right:5px}
+.youtubeFOOTER{background-image:url(/Images/spirit.png);background-position:-300px -315px;height:30px;width:30px}
+.Staffs{color:#1d71a8ab;text-decoration:underline;font-family:AnasayfaLight}
+figure .dieBox{background:#1d71a8}
+.slider--teams{position:relative;top:50%;left:40%;max-width:750px;opacity:0;transform:translate(-50%,0%)}
+.slider--teams .slider--teams__team{overflow:hidden}
+#list{position:relative;backface-visibility:hidden;transform:translate3d(0,0,0)}
+#list li{position:relative;display:inline-block;margin-top:15px;float:left;text-align:center}
+#list li figure{cursor:pointer;margin:1em;opacity:.5;backface-visibility:hidden;transition:transform 450ms cubic-bezier(0.445,0.05,0.55,0.95),opacity 450ms ease-in-out;transform:scale(0.5) translateZ(0px)}
+#list li figure:hover{opacity:.8;transform:scale(0.6) translateZ(0px)}
+#list li figure:active{opacity:1;transform:scale(0.7) translateZ(0px)}
+#list li figure > div{border-radius:5px;position:relative;margin:2rem auto;width:110px;height:110px;overflow:hidden;transform:rotate(45deg) translateZ(0px)}
+#list li figure > div > div{background-size:cover;background-position:0 0;position:absolute;top:50%;left:50%;width:170px;height:170px;transform:rotate(-45deg) translate(0%,-70%)}
+#list li figure figcaption p{color:#4a859e;font-size:14px;margin:-10px 0 0!important;font-weight:400;font-family:AnasayfaLight;font-style:italic}
+#list li figure > div > div{background-position:20px 10px!important}
+.active{opacity:1!important;transform:scale(1) translateZ(0px)!important}
+.cf:before,.cf:after{content:" ";display:table}
+.cf:after{clear:both}
+.cf{zoom:1}
+figcaption h2{font-family:AnasayfaLight;color:#4c869d!important;margin-top:30px!important;font-size:26px;font-weight:800;text-align:center}
+#content{width:900px;margin:0 auto;position:relative}
+.clearfix,.container_12{zoom:1}
+.sub-menu li a:hover,.sub-menu .current-item a{background:#4f4f4f;padding-left:27px}
+.sub-menu{width:100%;padding:5px 0;position:absolute;top:100%;left:0;z-index:-1;opacity:0;transition:opacity linear .15s;background:#3A3A3A}
+.sub-menu li{display:block;font-size:13px}
+.sub-menu li a{line-height:35px;padding:0 20px;color:#fff;display:block;transition:all .15s ease-out}
+.sub-menu li a:hover,.sub-menu .current-item a{background:#4f4f4f;padding-left:27px;text-decoration:none}
+.badgebox,.profilboxes .badgebox{border:3px solid #2685bc;border-radius:50%;background-position:50%;height:60px;background-repeat:no-repeat;width:60px;margin-top:20px;position:relative;margin-left:17px;float:left;display:inline-block}
+.profilboxes .titel2{font-size:20px;text-shadow:0 1px rgba(0,0,0,.3);color:#fff;font-family:Ubuntu Condensed;font-weight:400;text-transform:uppercase;line-height:28px;margin-top:65px;border-top:2px solid #fff;width:70%;float:right;margin-right:60px}
+.profilboxes .bbname{position:absolute;width:100%;text-align:center;padding:5px;top:79px;font-size:14px;font-family:Ubuntu,"Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif}
+.badges .text,.profilboxes .badges .text{color:#7ecaee;font-size:16px;font-variant-ligatures:common-ligatures;line-height:1.4}
+.profilboxes .titel{color:#fff;font-family:"Ubuntu Condensed","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;font-weight:400;margin:.13em 0;line-height:1.2;font-size:32px;text-transform:uppercase;text-shadow:0 1px rgba(0,0,0,.3)}
+.Rozetlios{background:#fff;margin-top:10px;width:100%;margin-right:15px;float:left}
+.leftsite{margin-bottom:10px;float:left;width:52%;min-height:384px}
+.leftsite .staffbox{background:#fff;margin-top:10px;width:100%;margin-right:15px;float:left}
+.rightsite{margin-bottom:10px;float:right;width:45%;min-height:384px}
+.rightsite .staffbox{background:#fff;margin-top:10px;width:100%;margin-right:15px;float:left}
+#ImageTop{width:900px;height:200px;height:140px;max-height:140px;background:url(https://habnet.biz/Images/profilim.gif) 119% 83%;overflow:hidden;image-rendering:pixelated;overflow:hidden;margin-bottom:20px}
+.user-avatar{display:block;position:absolute;width:125px;height:160px;margin-top:-20px;overflow:hidden}
+md-card.user-info-card md-card-content .user-info{padding:15px 0 0 125px;color:#fff}
+.gaestebuch .card-content{height:100%;width:100%;padding:0;background:rgba(0,0,0,0.37);color:#fff}
+.user-info{height:100%;width:20%;float:left;padding:15px 0 0 125px;color:#fff}
+.user-info span.user-name{font-size:30px;font-weight:400;padding-right:3px}
+.user-info span.last-login,.user-info span.user-motto{padding:0;text-align:left;overflow:hidden;height:5px;font-size:12px;text-overflow:hidden;font-weight:400}
+section.profile-badge-card-container{width:100%;height:100%}
+.badge-icon-aligner,.room-icon-aligner{align-items:center;border:3px solid #d27921;border-radius:50%;display:-ms-flexbox;display:flex;height:50px;-ms-flex-pack:center;background:#f59c23 url(/Images/butBG.png);justify-content:center;width:50px}
+.badge-icon,.room-icon{display:flex;float:left;justify-content:center;align-items:center}
+ul.badge-list li{margin:0 1px 0 0;cursor:pointer;float:left;width:100%;margin-bottom:10px}
+ul.badge-list{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;padding:10px}
+.stats li{float:left;display:inline-block;margin-right:25px;margin-left:0}
+.user-stats{width:594px;height:110px;float:right}
+.user-stats .titleuser{padding:8px;font-family:'Permanent Marker';text-align:center;font-size:28px;font-weight:700}
+.stats{padding:5px;text-align:center;font-size:15px;margin-left:25px;margin-right:0}
+.green{border-top:3px solid #5cb85c}
+.rozetlerim{padding:10px;cursor:pointer;float:left;display:inline-block;width:100%;margin-bottom:10px}
+ul.badge-list li a .badge-name{display:block;margin:15px 0 0;padding:0 6px;font-size:16px;font-weight:300;overflow:hidden;text-overflow:ellipsis;white-space:normal;color:#000;text-align:center;font-family:'Roboto Condensed',sans-serif!important}
+.toplist .userBox{height:75px;width:75px;float:left;overflow:hidden;cursor:pointer;position:relative}
+.toplist .userBox.online{border:2px solid #27ae60}
+.toplist .username{font:400 15px Roboto,sans-serif;color:#fff;overflow:hidden;padding:20px;font-weight:700}
+.toplist .descs{font:400 12px Roboto,sans-serif;font-style:italic;padding:5px}
+.toplist .userBox .avatar{background:no-repeat center -5px;height:80px;width:70px;border-radius:50px;-webkit-border-radius:50px;position:relative}
+.Content{margin-top:7px}
+.onlinesayisi{width:330px;margin:7px auto;margin-bottom:10px;position:unset;background:#00000036 none repeat scroll 0 0;padding:10px 38px;border-radius:5px}
+.detailsnew{text-align:center;margin:0;float:left;display:inline-block;height:90px;width:100%;background:rgba(210,210,210,0.84)}
+.detailsnew li{display:inline-block;float:left;width:150px;padding:34px;color:#26445f;font-weight:700;text-shadow:2px -2px 10px}
+.baranbutton{text-align:center;display:block;float:left;margin:60px;text-decoration:none;color:#fff;text-align:center;margin-left:120px;width:450px;height:70px;text-decoration:none;color:#fff;position:relative;background:linear-gradient(to bottom,#3BA800 0%,#3ba800 50%,#3aa501 51%,#2C7E00 100%);border:3px solid #2C7E00}
+#SubNavi ul a:last-child li{border-right:none!important}
+.Profilinkucuk li{float:left;display:inline-block;color:#094174;width:129px;font-size:12px;text-align:center;font-weight:700}
+.Profilinkucuk li a{text-decoration:none;font-size:12px;font-style:italic;color:#3b4548}
+.icone{background-color:rgba(0,0,0,0.1);background-repeat:no-repeat;background-position:center;width:50px;height:47px;border-radius:3px;margin-right:10px;float:left}
+.case{margin:-5px;margin-top:0;float:left;width:255px;height:36px;border-radius:3px;background-color:#F4F4F4;margin-bottom:8px;transition:all 300ms;cursor:pointer;margin-left:5px}
+.case .icon{float:left;width:32px;height:32px;margin:1px;margin-left:10px;background-image:url(/Images/oda.png)}
+.case .name{float:left;width:190px;padding-left:5px;padding-top:0;padding-bottom:0;font-weight:700;font-size:14px;color:#969696;max-width:190px}
+.case .besitzer{float:left;width:230px;padding-left:15px;font-size:13px;color:#969696;margin-top:-7px}
+.boxingout .boxbenim .boxbenimtab{float:left;width:125px;margin-left:-15px}
+.boxingout .boxbenim .boxbeniminfo{margin-top:7px;margin-left:27px}
+.boxingout .boxbenim .boxbeniminfo span{margin-left:15px}
+.boxingout .boxbenim .boxbeniminfo .one{border-radius:3px 0 0 3px}
+.boxingout .boxbenim .boxbeniminfo .three{border-radius:0 3px 3px 0}
+.boxingout .boxbenim .boxbeniminfo .four{margin-top:10px;border-radius:3px;width:361px;padding:5px;padding-left:35px;line-height:20px;font-weight:lighter}
+.boxingout .boxbenim .boxbeniminfo .five{margin-top:10px;border-radius:3px;width:361px;padding:5px;line-height:20px;font-weight:lighter}
+.login-bonus{float:left;height:102px;width:87px;text-align:center;margin-right:15px;color:#fff;font-weight:700;margin-top:10px}
+.login-bonus:nth-last-child(1){margin-right:0!important}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-section,.w3-code{width:699px;margin-top:16px!important;margin-bottom:16px!important}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,.w3-container,.w3-panel{padding:.01em 16px}
+.w3-panel{margin-top:16px;margin-bottom:16px}
+.w3-padding-small{padding:4px 8px!important}
+.w3-padding{padding:8px 0!important}
+.w3-padding-large{padding:12px 24px!important}
+.w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#0b5f96}
+.w3-center .w3-bar{display:inline-block;width:auto}
+.w3-center{text-align:center!important}
+.login-bonus .checked{height:64px;width:64px;margin-left:12px;margin-top:30px;position:absolute;background:url(/Images/checked.png) no-repeat}
+#rightContent.benRIGHT{width:670px;margin-bottom:10px}
+div#contentBox.left.BENBOX{width:201px;margin-top:0;height:196px}
+div#contentBox.left.BENBOX2{width:655px;margin-top:0;height:195px;background:url(https://habnet.biz/Images/BAMvXp.jpg) 10% 59%;border-bottom-right-radius:0;border-bottom-left-radius:0;border:2px solid #fff}
+.baranbutton:hover{color:#fff!important;text-decoration:none!important}
+.baranbutton font{text-decoration:none;font-weight:700;padding:20px;display:block;font-size:23px}
+#news .promo-container{float:left;background:green repeat scroll 45% 105%;height:96%;width:100%;border-radius:3px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.40)}
+#news .promo-container a.newslink{text-shadow:0 -1px 3px #000,1px 0 3px #000,0 1px 3px #000,-1px 0 3px #000;font-family:Ubuntu,Arial,serif}
+#news .promo-container a.newsbut{border-radius:4px;bottom:14px;right:14px;position:absolute}
+#news .promo-container p{text-shadow:0 -1px 2px #000,1px 0 2px #000,0 1px 2px #000,-1px 0 2px #000;font-family:Ubuntu,Arial,serif}
+#mecont .benavatar{float:left;margin:40px 0 0 60px;width:120px;height:157px;-webkit-filter:drop-shadow(0 2px 0 #FFF) drop-shadow(0 -2px 0 #FFF) drop-shadow(2px 0 0 #FFF) drop-shadow(-2px 0 0 #FFF);z-index:999}
+#mecont{background:url(/Images/avatarsummer.png) 90% 94%;height:197px;width:202px;position:relative;border-radius:2px}
+button.ribbon{outline:none;outline-color:transparent}
+button.ribbon:before,button.ribbon:after{top:5px;z-index:-10}
+button.ribbon:before{border-color:#53dab6 #53dab6 #53dab6 transparent;left:-25px;border-width:17px}
+button.ribbon:after{border-color:#53dab6 transparent #53dab6 #53dab6;right:-25px;border-width:17px}
+button:before,button:after{content:'';position:absolute;height:0;width:0;border-style:solid;border-width:0;outline:none}
+button.btn-default:before{border-color:#757575 #757575 #757575 transparent}
+button.btn-default:after{border-color:#757575 transparent #757575 #757575}
+button.btn-primary:before{border-color:#2e6da4 #2e6da4 #2e6da4 transparent}
+button.btn-primary:after{border-color:#2e6da4 transparent #2e6da4 #2e6da4}
+button.btn-success:before{border-color:#398439 #398439 #398439 transparent}
+button.btn-success:after{border-color:#398439 transparent #398439 #398439}
+button.btn-info:before{border-color:#269abc #269abc #269abc transparent}
+button.btn-info:after{border-color:#269abc transparent #269abc #269abc}
+button.btn-warning:before{border-color:#d58512 #d58512 #d58512 transparent}
+button.btn-warning:after{border-color:#d58512 transparent #d58512 #d58512}
+button.btn-danger:before{border-color:#ac2925 #ac2925 #ac2925 transparent}
+button.btn-danger:after{border-color:#ac2925 transparent #ac2925 #ac2925}
+.hotcampaigns{list-style-type:none;margin:0;padding:0}
+.hotcampaigns li{position:relative;color:#fff;height:57px;background:#515151;padding:10px}
+.hotcampaigns li .hotcampaigns-image{background:no-repeat center center;height:60px;width:160px;position:absolute;border-radius:2px;-webkit-border-radius:2px}
+.hotcampaigns li .hotcampaigns-title{font-size:16px;font-weight:600;line-height:0;margin-top:10px;margin-left:165px}
+.hotcampaigns li .hotcampaigns-desc{margin-bottom:5px;font-weight:100;margin-left:165px;width:200px;margin-top:7px;font-size:13px}
+.hotcampaigns li .hotcampaigns-readMore{position:absolute;bottom:10px;right:10px;text-decoration:none;color:#fff;font-size:13px}
+.hotcampaigns li:nth-last-child(odd){background:#717171;padding:10px}
+.hotcampaigns li:last-child{border-bottom-left-radius:2px;-webkit-border-bottom-left-radius:2px;border-bottom-right-radius:2px;-webkit-border-bottom-right-radius:2px}
+#contentBoxi{margin-bottom:10px;border-radius:2px;-webkit-border-radius:2px;position:relative;box-shadow:inset 0 -2px 0 rgba(0,0,0,.15);color:rgba(255,255,255,.7)}
+.newslink a:hover{color:#fff}
+.nonplus:hover{color:#346597!important}
+#news{width:610px;height:313px;float:left}
+#promo-box{height:313px;opacity:.75;margin-top:6px;width:600px}
+#promo-bullets{opacity:.75;float:left;margin-top:230px;width:75%}
+#contentBox .left .WELKOM{width:655px;margin-top:0;height:195px;background:url(https://puu.sh/vJdKH.png) 0 9%;border-bottom-right-radius:0;border-bottom-left-radius:0;border-bottom:1px solid gray}
+#contentBox .ROOMSS{width:275px;margin-top:0;height:305px;padding:0!important}
+#contentBox .RoomTop{width:260px;height:48px;color:#000;padding:13px;border-bottom:1px solid gray}
+#contentBox .icone{background-color:#184b76;background-image:url(/Images/odalar.gif)}
+#contentBox .descc{font-size:11px;font-style:italic;color:rgba(0,0,0,0.7);text-decoration:none}
+#leftContent.benLEFT{width:215px;height:215px}
+div#contentBox.left.BENODA{width:285px;margin-top:0;height:300px;padding:0!important}
+.login-bonus.credits{background:url(/Images/dailykredi.png) no-repeat}
+.login-bonus.stars{background:url(/Images/dailyelmas.png) no-repeat}
+.boxingout{display:inline;float:left;margin-right:10px;width:555px}
+.boxbenim{background:url(//habnet.biz/Web/Images/8DuSIdn.png) left;background-color:#fff;margin-bottom:20px;font-size:14px;padding:10px;font-family:Roboto;line-height:150%;font-weight:lighter;box-shadow:0 0 5px rgba(0,0,0,0.05)}
+.viewuser{background:rgba(0,0,0,0.45);width:140px;height:30px;float:left;line-height:30px;font-weight:700;font-family:Ubuntu;color:#fff;font-size:12px}
+.profile-header__avatar__image{display:block;margin-top:-37px;position:relative}
+.usericon{background-color:rgba(255,255,255,0.35);width:35px;height:35px;text-align:center;border-radius:100px;border:2px solid rgba(255,255,255,0.7);overflow:hidden;float:left;margin-top:-3px}
+.join-hotel{background:linear-gradient(to bottom,#3cb061 0%,#3cb061 50%,#2ba453 51%,#2ba453 100%);-webkit-box-shadow:0 1px 0 0 #0A4E21;width:42%;margin:10px auto;-moz-box-shadow:0 1px 0 0 #0A4E21;-o-box-shadow:0 1px 0 0 #0A4E21;padding:30px;border:3px solid #16A020;height:45px;line-height:4px;color:#fff;text-align:center;font-weight:700;text-shadow:0 1px 0 rgba(0,0,0,0.5)}
+.join-hotel a{text-decoration:none;color:inherit;outline:0}
+.join-hotel:hover{opacity:.9}
+#profil88{position:relative;width:335px;float:left}
+#profil89{position:relative;width:100%;background:#feb063;height:125px;margin-bottom:4px}
+#profil90{position:absolute;height:147px;width:119px;left:-15px;top:-22px;overflow:hidden}
+#profil94:hover{opacity:.7}
+#profil91{position:absolute;height:21px;width:calc(100% - 190px);background:#fff;right:32px;top:13px;padding:6px 10px 10px 30px;border-radius:7px;font-size:130%;color:#feb063}
+#profil93{position:relative;height:89px;width:calc(100% - 150px);left:118px;top:60px;overflow:hidden;color:#fff;font-size:15px}
+#profil92{position:absolute;height:33px;width:16px;background:url(https://habnet.biz/Web/Images/pageme.png?5x5x) -1411px -156px;left:7px;top:2px}
+#profil94{position:relative;height:115px;width:100%;background:#326c94;cursor:pointer;transition:.2s}
+#profil95{position:absolute;color:#fff;font-size:20px;top:10px;left:23px}
+#status a{color:#fff!important}
+#profil96{position:absolute;height:91px;width:85px;background:url(https://habnet.biz/Web/Images/pageme.png?5x5x) -1324px -100px;right:10px;bottom:10px}
+#profil97n{position:relative;width:calc(200% + 34px);z-index:2}
+.name a:hover{padding-left:17px;text-decoration:none}
+.bildirim-re.bildirim-re-warning{border-color:#f58229}
+.bildirim-re{display:table;width:100%;border-spacing:0;position:relative;background:#fff;font-weight:600;font-size:10pt;color:#303030;border-right:3px solid #23b8b0}
+.margin-bottom-15{margin-bottom:15px}
+.bildirim-re.bildirim-re-warning .bildirim-re-icon{background:#f58229}
+.bildirim-re .bildirim-re-icon{display:table-cell;vertical-align:middle;text-align:center;width:70px;font-size:30px;color:#fff;background:#23b8b0}
+.bildirim-re .bildirim-re-content{display:table-cell;vertical-align:middle;padding:15px}
+.bildirim-re h1{margin:0;font-weight:700;font-size:16px;color:#f58229}
+.bildirim-re p{margin:0;color:#636262;font-family:'Source Sans Pro',sans-serif!important;font-size:13px}
+#photostext{width:100%;padding:10px}
+#photostext span{font-size:18px;text-transform:uppercase;padding-bottom:0!important;border-bottom:none!important}
+#photosstrich{margin-top:5px;height:2px;background-color:#fff;width:97%}
+#textss{opacity:.75;color:#fff;margin-top:5px}
+.fotograf{max-width:295px}
+.fotograf img{max-width:295px}
+.fotografzaman .Posteddate{font-size:13px;padding-left:10px;text-decoration:none;color:#fff;opacity:2.1;font-style:oblique}
+.fotografzaman .PostedUser{text-decoration:none;margin-right:10px;color:orange}
+.fotografzaman{font-size:14px;background-color:rgba(0,0,0,.5);color:#fff;width:295px;height:50px;margin-top:-50px;line-height:50px;position:absolute}
+#Resimlero{width:100%;margin-bottom:10px;float:left;margin-top:10px}
+#ResimIcerik{display:inline-block;margin-bottom:10px;width:297px;height:auto}
+#ResimUst{width:100%;background:#212f40e0 url(/Images/butBG.png);color:#FCAC45;margin-top:10px;float:left;height:80px}
+.admininhalt{width:100%}
+.customers{font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;border-collapse:collapse;float:right;width:69%}
+.customers td,#customers th{padding:8px;max-width:535px}
+.customers tr:nth-child(even){background-color:#03a9f48c}
+.customers tr:hover{background-color:#dddddd47}
+.customers th{padding-top:12px;padding-bottom:12px;text-align:left;background-color:#1c7fd461;color:#fff}
+.table-bordered{border:none!important}
+[data-tooltip]{position:relative;z-index:2;cursor:pointer}
+[data-tooltip]:before,[data-tooltip]:after{visibility:hidden;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:progid: DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;pointer-events:none}
+[data-tooltip]:before{position:absolute;bottom:130%;left:50%;margin-top:5px;margin-left:-55px;padding:7px;width:100px;transition:all 300ms;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#fcac5c url(/Images/butBG.png);color:#fff;content:attr(data-tooltip);text-align:center;font-size:14px;line-height:1.8}
+[data-tooltip]:after{position:absolute;bottom:120%;left:46%;margin-left:-5px;width:0;border-top:5px solid #fff;border-right:5px solid transparent;border-left:5px solid transparent;content:" ";font-size:0;line-height:0}
+[data-tooltip]:hover:before,[data-tooltip]:hover:after{visibility:visible;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:progid: DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}
+.Infolar li{width:22%;float:left;text-align:center;height:95px;display:inline-block}
+.baslikli{width:100%;text-transform:uppercase;padding:5px;text-align:center;font-size:16px;background:#2196f324;font-weight:700;letter-spacing:1px}
+.statslerim{width:33%;height:100%;text-align:center;float:left;display:inline-block}
+.usernamesi{text-align:center}
+.benpage a{width:100%;float:left;background:#2196f35c;padding:10px;transition:.3s}
+.benpage a:hover{opacity:.5}
+.hotelebas{width:25%;height:100%;background:linear-gradient(to bottom,#3cb061 0%,#3cb061 50%,#2ba453 51%,#2ba453 100%);-webkit-box-shadow:0 1px 0 0 #0A4E21;-moz-box-shadow:0 1px 0 0 #0A4E21;text-transform:uppercase;-o-box-shadow:0 1px 0 0 #0A4E21;padding:26px;color:#fff;line-height:2;text-align:center;font-weight:700;float:right;text-shadow:0 1px 0 rgba(0,0,0,0.5)}
+#ben-topdiv{width:20%;height:100%;background:#2196f326;float:left}
+#ben-main{width:585px;float:left;padding-top:0}
+#ben-topmain{width:100%;float:left;height:175px;background-color:#2e6da452;padding-top:0}
+#ben-div{background-color:#2e6da452;width:100%;float:left;left:50%;margin-top:0;-moz-border-radius:7px;-webkit-border-radius:7px}
+.benpage .avatarImage{width:40px;height:40px;border-color:#0b5f96}
+#pictureben{width:40px;float:left}
+.benpage .infolar{color:#fff;float:left;padding:10px;font-size:14px}
+.VorButton{width:40px;margin:-5px -45px;height:40px;float:left;text-align:center;border-radius:50px;background:#276f6f;position:absolute}
+.VorButton i{margin:7px auto;font-size:25px}
+.BoxTitlebig{font-size:30px;color:#2779b1;text-align:center;width:100%;font-family:AnasayfaLight;position:relative;height:50px}
+.namens{text-align:center;width:100%;font-size:4vh;height:40px}
+input.Helping[type="submit"] {
+    color: #fff;
+    border: none!important;
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    float: left;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #2779b1;
+    transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
+}.navbar-nav li:hover{background:#18669a80}
+.navbar-default .navbar-nav>.active>a{background:#1e6ea5!important}
+.navbar-default .navbar-nav>li>a{color:#fff!important;text-transform:uppercase}
+.container{width:950px}
+.navbar-default{background-color:#1365a7;font-size:17px;border-color:#403f3f42!important;border-bottom:3px solid #0467944d;background:#2980b9}
+.btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.dl-horizontal dd:after,.dl-horizontal dd:before,.form-horizontal .form-group:after,.form-horizontal .form-group:before,.modal-footer:after,.modal-footer:before,.modal-header:after,.modal-header:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.pager:after,.pager:before,.panel-body:after,.panel-body:before,.row:after,.row:before{display:table;content:" "}
+.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-horizontal .form-group:after,.modal-footer:after,.modal-header:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after{clear:both}
+.bg-hotel{background:url(https://habnet.biz/img/headerright_1.png) 100% 50% no-repeat;height:130px;width:100%}
+.logonewl{transform:rotate(0deg) scale(1) translateZ(0);transition:all .4s cubic-bezier(.8,1.8,.75,.75)}
+.navigation li{width:25%;padding:7px;float:left;text-align:center;font-size:20px;margin-top:20px;border-radius:5px;text-transform:uppercase}
+.navision li a{font-family:AnasayfaLight;color:#bfbfbf}
+.navision li .active{color:#1d71a8!important;border-bottom:5px solid #1d71a8;border-radius:5px}
+.avatarImagedesc{width:94%;background:#2779b1;height:60px;font-size:14px;font-family:AnasayfaLight;word-break:break-all;position:absolute;margin-top:150px;overflow:hidden;margin-left:-5px;padding:6px;text-overflow:unset;text-transform:uppercase;text-align:center;border-radius:15px}
+.flib-card{margin:0;padding:0;background-color:#292929;align-items:center;display:flex;justify-content:center;font-family:arial;height:200px;width:100%}
+.middle{width:100%;height:auto}

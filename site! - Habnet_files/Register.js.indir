@@ -1,0 +1,195 @@
+	$('#regibut').click(function() {
+	$('.Background-Left').css({
+		'z-index': '-2',
+	});
+	});
+	$('#regibut').click(function() {
+	$('.mithover').css({
+		'display': 'none',
+	});
+	$('.Newest-Article').css({
+		'background': 'rgba(16, 57, 96, 0.3)',
+		'width': '100%',
+		'height': '98%',
+	});
+	$('.Content').css({
+		'width': '710px',
+		'padding': '30px',
+	});
+		$('.Register').css({
+		'display': 'inline',
+	});
+	$('.Footer').css({
+	    'position': 'absolute',
+	});
+		$('.rechtsman').css({
+	    'display': 'none',
+	});
+	$('.formContainer').css({
+	    'display': 'none',
+	});
+	});
+		$("#Wrapper").hide().fadeIn(2000);
+		function pluginWeb() {
+			return "/Application/Plugins/Habnet/Main/Web/";
+		}
+		
+		function Site() {
+			return "";
+		}
+		
+		var TxtRotate = function(el, toRotate, period) {
+this.toRotate = toRotate;
+this.el = el;
+this.loopNum = 0;
+this.period = parseInt(period, 10) || 2000;
+this.txt = '';
+this.tick();
+this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+var i = this.loopNum % this.toRotate.length;
+var fullTxt = this.toRotate[i];
+
+if (this.isDeleting) {
+this.txt = fullTxt.substring(0, this.txt.length - 1);
+} else {
+this.txt = fullTxt.substring(0, this.txt.length + 1);
+}
+
+this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+var that = this;
+var delta = 300 - Math.random() * 100;
+
+if (this.isDeleting) { delta /= 2; }
+
+if (!this.isDeleting && this.txt === fullTxt) {
+delta = this.period;
+this.isDeleting = true;
+} else if (this.isDeleting && this.txt === '') {
+this.isDeleting = false;
+this.loopNum++;
+delta = 500;
+}
+
+setTimeout(function() {
+that.tick();
+}, delta);
+};
+
+window.onload = function() {
+var elements = document.getElementsByClassName('txt-rotate');
+for (var i=0; i<elements.length; i++) {
+var toRotate = elements[i].getAttribute('data-rotate');
+var period = elements[i].getAttribute('data-period');
+if (toRotate) {
+  new TxtRotate(elements[i], JSON.parse(toRotate), period);
+}
+}
+// INJECT CSS
+var css = document.createElement("style");
+css.type = "text/css";
+css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+document.body.appendChild(css);
+};
+
+var register = 0;
+$(".Register-Button").click(function () {
+	if(register == 0) {
+		$(".Register-Button").html("Vazgeç");
+		$(".Slider").hide();
+		$(".Register").fadeIn();
+		$(".Register-Button").addClass("Red-Button");
+		register = 1;
+	} else {
+		$(".Register-Button").html("Kayit ol");
+		$(".Slider").fadeIn();
+		$(".Register").hide();
+		$(".Register-Button").removeClass("Red-Button");
+		register = 0;
+	}
+});
+
+var form_register = $("#Register");
+form_register.submit(function (event) {
+	$("#Register-Button").fadeOut();
+	var UserRef = $("#Register-User").val();
+	var Username = $("#Register-Username").val();
+	var Email = $("#Register-Email").val();
+	var Password = $("#Register-Password").val();
+	var PasswordConfirm = $("#Register-PasswordConfirm").val();
+	var captcha = grecaptcha.getResponse();
+	$.ajax({
+		url: "/Application/Plugins/Habnet/Main/Web/Ajax/Register.php",
+		dataType: "text",
+		method: form_register.attr("method"),
+		data: {Username:Username, UserRef:UserRef, Email:Email, Password:Password, PasswordConfirm:PasswordConfirm, grecaptcharesponse:captcha}
+	}).done(function(data) {
+		obj = JSON.parse(data);
+		if(obj.Success == undefined) {
+			$(".Register-Error").html(obj.Message);
+		} else {
+			window.location = Site();
+		}
+		$("#Register-Button").fadeIn();
+	}).fail(function(data) {
+		$("#Register-Button").fadeIn();
+	});
+	
+	event.preventDefault();
+});
+
+function isElectron() {
+    // Renderer process
+    if (typeof window !== 'undefined' && typeof window.process === 'object' && window.process.type === 'renderer') {
+        return true;
+    }
+
+    // Main process
+    if (typeof process !== 'undefined' && typeof process.versions === 'object' && !!process.versions.electron) {
+        return true;
+    }
+
+    // Detect the user agent when the `nodeIntegration` option is set to true
+    if (typeof navigator === 'object' && typeof navigator.userAgent === 'string' && navigator.userAgent.indexOf('Electron') >= 0) {
+        return true;
+    }
+
+    return false;
+}
+
+var form = $("#Login");
+form.submit(function (event) {
+	$("#Login-Button").fadeOut();
+	var Username = $("#Username").val();
+	var Password = $("#Password").val();
+	$('#loginerror').html('');
+	$('#loginerror').hide();
+	$.ajax({
+		url: "/Application/Plugins/Habnet/Main/Web/Ajax/Login.php",
+		dataType: "text",
+		method: form.attr("method"),
+		data: {Username:Username, Password:Password}
+	}).done(function(data) {
+		obj = JSON.parse(data);
+		if(obj.Success == undefined) {
+			$('#loginerror').html(obj.Message);
+			$('#loginerror').show();
+			$("#Username").css("border-color", "#CC3939");
+			$("#Password").css("border-color", "#CC3939");
+		} else {
+			if(isElectron()){
+			location = "https://habnet.biz/oyun";
+			}else{
+			window.location = Site();
+			}
+		}
+		$("#Login-Button").fadeIn();
+	}).fail(function(data) {
+		$("#Login-Button").fadeIn();
+	});
+	
+	event.preventDefault();
+});

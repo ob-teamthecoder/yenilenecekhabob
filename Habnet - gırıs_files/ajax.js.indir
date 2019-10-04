@@ -1,0 +1,24 @@
+const capitalize = (s) => {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+function changePage (name){
+  var title = capitalize(name);
+  document.title = ' Habnet | '+ baslik;
+  window.history.pushState(name, title, '/'+name);
+  var name = '/'+name
+
+  $.ajax({
+      url: name,
+      type: 'GET',
+      success: function(data){
+        data = $(data);
+        var $div = $('#Contetimiz', data);
+        $('#Mainimiz').html($div);
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+      }
+    });
+
+  const parent= event.target.parentNode;
+}
